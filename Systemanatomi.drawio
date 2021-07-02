@@ -1,163 +1,248 @@
-<mxfile host="app.diagrams.net" modified="2021-07-02T17:55:00.182Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="0koO6xlMVu2dSRB8sFRh" version="14.8.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-02T19:19:28.476Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="_wIQfuZcsMUN_Rymx1J3" version="14.8.3" type="github">
   <diagram name="Page-1" id="099fd60b-425b-db50-ffb0-6b813814b670">
-    <mxGraphModel dx="1315" dy="518" grid="1" gridSize="15" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2430" dy="1760" grid="1" gridSize="15" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-14" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-14" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="-240" y="270" width="285" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="75" y="30" width="420" height="180" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-240" y="45" width="420" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-2" value="Om&amp;nbsp; mig" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="90" y="60" width="120" height="60" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-2" value="Om&amp;nbsp; mig" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-225" y="75" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-3" value="Priser för tjänster" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="360" y="60" width="120" height="60" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-3" value="Priser för tjänster" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="45" y="75" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-4" value="Tidigare klienter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="225" y="60" width="120" height="60" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-4" value="Tidigare klienter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="75" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tq9Zr-65AGwRCiA0EKvX-5" target="tq9Zr-65AGwRCiA0EKvX-14">
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="tq9Zr-65AGwRCiA0EKvX-5" target="tq9Zr-65AGwRCiA0EKvX-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-5" value="Ansök om medlemskap" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="90" y="135" width="120" height="60" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-5" value="Ansök om medlemskap" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="-225" y="150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tq9Zr-65AGwRCiA0EKvX-6" target="tq9Zr-65AGwRCiA0EKvX-30">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-6" value="Gratis konsultation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="225" y="135" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tq9Zr-65AGwRCiA0EKvX-7" target="tq9Zr-65AGwRCiA0EKvX-38">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-7" value="Login" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="360" y="135" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-9" value="Personuppgifter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="-225" y="300" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tq9Zr-65AGwRCiA0EKvX-11" target="tq9Zr-65AGwRCiA0EKvX-20">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-11" value="Ansök med Swish betalning" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="-225" y="375" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tq9Zr-65AGwRCiA0EKvX-12" target="tq9Zr-65AGwRCiA0EKvX-20">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-12" value="Ansök utan betalning" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="-90" y="375" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-13" value="Info om medlemstjänster och enskilda tjänster" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-90" y="300" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-17" value="&lt;b&gt;Startsida&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="90" y="30" width="40" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-18" value="&lt;b&gt;Nytt medlemskap sida&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-225" y="270" width="180" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-20" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-240" y="495" width="285" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-22" value="Tillbaks startsida" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="-157.5" y="600" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-24" value="Kontaktinformation&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-90" y="525" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-25" value="&lt;b&gt;Konfirmationsida&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-225" y="495" width="180" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-26" value="Konfirmation till anmälan" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-225" y="525" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-30" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="142.5" y="270" width="285" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-31" value="Mail &amp;amp; namn" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="157.5" y="300" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-32" value="Bekräfta" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="217.5" y="375" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-35" value="&lt;b&gt;Konsultationsida&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="157.5" y="270" width="180" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-37" value="&lt;b&gt;3 - 5 korta frågor&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="292.5" y="300" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-38" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="525" y="270" width="285" height="105" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-39" value="Mail &amp;amp; lösenord" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="540" y="300" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tq9Zr-65AGwRCiA0EKvX-40" target="tq9Zr-65AGwRCiA0EKvX-44">
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="tq9Zr-65AGwRCiA0EKvX-6" target="tq9Zr-65AGwRCiA0EKvX-30" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="735" y="480" />
-              <mxPoint x="300" y="480" />
+              <mxPoint x="-30" y="240" />
+              <mxPoint x="90" y="240" />
+              <mxPoint x="90" y="255" />
+              <mxPoint x="233" y="255" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-40" value="Login" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="675" y="300" width="120" height="60" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-6" value="Gratis konsultation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-41" value="&lt;b&gt;Loginsida&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="540" y="270" width="180" height="30" as="geometry" />
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.571;exitY=1.022;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="tq9Zr-65AGwRCiA0EKvX-7" target="tq9Zr-65AGwRCiA0EKvX-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="114" y="240" />
+              <mxPoint x="540" y="240" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-44" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="90" y="495" width="420" height="180" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-7" value="Login" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="45" y="150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-46" value="Kontoöversikt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="240" y="600" width="120" height="60" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-9" value="Personuppgifter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="-225" y="300" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-47" value="&lt;b&gt;Admin sida&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="105" y="495" width="180" height="30" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="tq9Zr-65AGwRCiA0EKvX-11" target="tq9Zr-65AGwRCiA0EKvX-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-50" value="Ändra FAQ/Om mig" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="240" y="525" width="120" height="60" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-11" value="Ansök med Swish betalning" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="-225" y="375" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-51" value="Skapa nytt program" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="105" y="525" width="120" height="60" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="tq9Zr-65AGwRCiA0EKvX-12" target="tq9Zr-65AGwRCiA0EKvX-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-52" value="Övningsbank" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="105" y="600" width="120" height="60" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-12" value="Ansök utan betalning" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="375" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-53" value="Kalender för klienter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="375" y="525" width="120" height="60" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-13" value="Info om medlemstjänster och enskilda tjänster" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="300" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-55" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="525" y="495" width="420" height="180" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-17" value="&lt;b&gt;Startsida&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-225" y="45" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-56" value="Kontoöversikt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="675" y="600" width="120" height="60" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-18" value="&lt;b&gt;Nytt medlemskap sida&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-225" y="270" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-57" value="&lt;b&gt;Medlemssida&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-20" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-240" y="495" width="285" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tq9Zr-65AGwRCiA0EKvX-22" target="tq9Zr-65AGwRCiA0EKvX-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-300" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-97" y="690" />
+              <mxPoint x="-255" y="690" />
+              <mxPoint x="-255" y="135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-22" value="Tillbaks" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="-157.5" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-24" value="Kontaktinformation&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-25" value="&lt;b&gt;Konfirmationsida&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-225" y="495" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-26" value="Konfirmation till anmälan" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-225" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-30" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="75" y="270" width="285" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-31" value="Mail &amp;amp; namn" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="90" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.399;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tq9Zr-65AGwRCiA0EKvX-32" target="tq9Zr-65AGwRCiA0EKvX-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="225" y="465" />
+              <mxPoint x="60" y="465" />
+              <mxPoint x="60" y="255" />
+              <mxPoint x="-72" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-32" value="Bekräfta" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="150" y="375" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-35" value="&lt;b&gt;Konsultationsida&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="270" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-37" value="&lt;b&gt;3 - 5 korta frågor&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="225" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-38" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="375" y="307.5" width="285" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-39" value="Mail &amp;amp; lösenord" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="390" y="337.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tq9Zr-65AGwRCiA0EKvX-40" target="tq9Zr-65AGwRCiA0EKvX-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="480" />
+              <mxPoint x="270" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tq9Zr-65AGwRCiA0EKvX-40" target="tq9Zr-65AGwRCiA0EKvX-55">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="480" />
+              <mxPoint x="735" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-40" value="Login" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="525" y="337.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-41" value="&lt;b&gt;Loginsida&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="390" y="307.5" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-44" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="60" y="495" width="420" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-46" value="Kontoöversikt" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="210" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-47" value="&lt;b&gt;Admin sida&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="75" y="495" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-50" value="Ändra FAQ/Om mig" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="210" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-51" value="Skapa nytt program" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="75" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-52" value="Övningsbank" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="75" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-53" value="Kalender för klienter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="345" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-55" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="525" y="495" width="420" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-57" value="&lt;b&gt;Medlemssida&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="540" y="495" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-58" value="Ändra FAQ/Om mig" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="675" y="525" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-59" value="Skapa nytt program" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-58" value="&lt;b&gt;FAQ&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="540" y="525" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-60" value="Övningsbank" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-60" value="&lt;b&gt;Övningsbank&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="540" y="600" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-61" value="Kalender för klienter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-61" value="Recept med tips &amp;amp; tricks" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="810" y="525" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-62" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="-225" y="30" width="150" height="180" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-62" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="270" y="45" width="285" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="tq9Zr-65AGwRCiA0EKvX-63" value="Om&amp;nbsp; mig" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-210" y="30" width="120" height="60" as="geometry" />
+        <mxCell id="tq9Zr-65AGwRCiA0EKvX-63" value="Komponent" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="285" y="75" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-3" value="Knapp som leder till sidbyte" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="75" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-4" value="Användarinmatning" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="285" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-5" value="Hemsida" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="420" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-6" value="&lt;b&gt;Diamgram förklaring&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="285" y="45" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-15" value="&lt;b&gt;Program&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="675" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-16" value="&lt;b&gt;Min progression&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="810" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-17" value="&lt;b&gt;Hälsodeklaration&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="810" y="675" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-18" value="&lt;b&gt;Matdagbok&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="675" y="675" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-19" value="&lt;b&gt;Kalender&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="675" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_5MEQo9Uz6i8g7MSm9UJ-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-135" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="405" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-20" value="&lt;b&gt;Logout&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="345" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_5MEQo9Uz6i8g7MSm9UJ-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="345" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="765" />
+              <mxPoint x="510" y="765" />
+              <mxPoint x="510" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_5MEQo9Uz6i8g7MSm9UJ-21" value="&lt;b&gt;Logout&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="540" y="675" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
