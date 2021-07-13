@@ -5,19 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginPageComponent } from './login-page/login-page.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginPageComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgbModule,
-    AppRoutingModule,
-  ],
+  declarations: [AppComponent, LoginPageComponent],
+  imports: [ReactiveFormsModule, BrowserModule, NgbModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
