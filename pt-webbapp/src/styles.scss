@@ -1,0 +1,25 @@
+// Compiling the project is working but a lot of warnings will appear, this is not a problem
+// for the project however it is very annoying.
+//! DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+//
+// @author Johan Ehinger (https://github.com/johanehinger)
+
+// Set all colors here.
+:root {
+  --bs-blue: #0c1d31;
+  --bs-orange: #ec9d02;
+}
+// Set theme colors.
+$theme-colors: (
+  "primary": #84329b,
+  "secondary": #02bceb,
+);
+
+$body-bg: var(--bs-blue);
+// $body-color: #0c1d31;
+
+.card-title {
+  color: var(--bs-orange);
+}
+
+@import "~bootstrap/scss/bootstrap";
