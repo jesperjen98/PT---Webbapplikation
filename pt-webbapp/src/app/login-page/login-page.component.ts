@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 /**
  * LoginPageComponent
  *
@@ -18,9 +19,10 @@ export class LoginPageComponent {
     password: [''],
   });
 
-  constructor(private _formBuilder: FormBuilder) {}
+  constructor(private _formBuilder: FormBuilder, private _router: Router) {}
 
   public login(): void {
     console.log(this.loginForm.value);
+    this._router.navigate(['member']);
   }
 }
