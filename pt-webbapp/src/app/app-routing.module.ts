@@ -1,6 +1,7 @@
+import { MemberPageComponent } from './member-page/member-page.component';
 /**
  * AppRoutingModule
- * 
+ *
  * @author Johan Ehinger (https://github.com/johanehinger)
  */
 
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginPageComponent,
+  },
+  {
+    path: 'member',
+    component: MemberPageComponent,
   },
 ];
 
