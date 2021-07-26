@@ -42,7 +42,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 
 body {
+  height: 100%;
   background: map-get($map: $theme-colors, $key: "berlin-blue") !important;
+  p {
+    color: $light;
+  }
 }
 
 .navbar {
