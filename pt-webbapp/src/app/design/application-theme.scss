@@ -5,7 +5,7 @@
 // @author Johan Ehinger (https://github.com/johanehinger)
 
 @import "colors.scss";
-
+@import "page-footer-theme.scss";
 // Set theme colors.
 $theme-colors: (
   "primary":
@@ -39,6 +39,17 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
         map-get($map: $theme-colors, $key: "berlin-blue"),
       0 0 8px map-get($map: $theme-colors, $key: "mustard");
   }
+  .panel-body {
+    color: $light;
+  }
+  .panel-heading {
+    color: map-get($map: $theme-colors, $key: "mustard");
+    font-size: xx-large;
+  }
+  .panel-footer {
+    color: map-get($map: $theme-colors, $key: "mustard");
+    font-size: large;
+  }
 }
 
 body {
@@ -57,7 +68,6 @@ body {
 
 .card {
   width: 18rem;
-  background-color: red;
 }
 
 @import "~bootstrap/scss/bootstrap";

@@ -1,0 +1,12 @@
+@import "colors.scss";
+
+.page-footer {
+  background-color: $dark;
+  color: $light;
+  a {
+    color: map-get($map: $custom-colors, $key: "mustard");
+  }
+  a:hover {
+    color: map-get($map: $custom-colors, $key: "mustard");
+  }
+}
