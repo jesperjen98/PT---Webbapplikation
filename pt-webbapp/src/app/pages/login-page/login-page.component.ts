@@ -1,3 +1,4 @@
+import { AuthService } from './../../services/auth.service';
 import { Router } from '@angular/router';
 /**
  * LoginPageComponent
@@ -19,10 +20,18 @@ export class LoginPageComponent {
     password: [''],
   });
 
-  constructor(private _formBuilder: FormBuilder, private _router: Router) {}
+  constructor(
+    private _formBuilder: FormBuilder,
+    private _router: Router,
+    private _authService: AuthService
+  ) {}
 
   public login(): void {
     console.log(this.loginForm.value);
     this._router.navigate(['member']);
+    this._authService.signIn(
+      this.loginForm.value.email,
+      this.loginForm.value.email
+    );
   }
 }
