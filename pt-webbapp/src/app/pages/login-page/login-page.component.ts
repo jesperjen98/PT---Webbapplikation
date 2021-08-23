@@ -1,13 +1,8 @@
+import { StatusCodes } from './../../models/status-codes';
 import { AuthService } from './../../services/auth.service';
 import { Router } from '@angular/router';
-/**
- * LoginPageComponent
- *
- * @author Johan Ehinger (https://github.com/johanehinger)
- */
-
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login-page',
@@ -15,9 +10,10 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./login-page.component.css'],
 })
 export class LoginPageComponent {
+  public error: string | null = null;
   public loginForm: FormGroup = this._formBuilder.group({
-    email: [''],
-    password: [''],
+    email: ['', Validators.required],
+    password: ['', Validators.required],
   });
 
   constructor(
@@ -27,11 +23,36 @@ export class LoginPageComponent {
   ) {}
 
   public login(): void {
-    console.log(this.loginForm.value);
-    this._router.navigate(['member']);
-    this._authService.signIn(
-      this.loginForm.value.email,
-      this.loginForm.value.email
-    );
+    if (this.loginForm.valid) {
+      this._authService
+        .signIn(this.loginForm.value.email, this.loginForm.value.password)
+        .then((result: StatusCodes) => {
+          switch (result) {
+            case StatusCodes.Success: {
+              this._router.navigate(['member']);
+              this.error = null;
+              break;
+            }
+            case StatusCodes.NotFound: {
+              this.error = 'Användaren existerar inte';
+              break;
+            }
+            case StatusCodes.CantAccess: {
+              this.error = 'Fel lösenord';
+              break;
+            }
+            case StatusCodes.InvalidEmail: {
+              this.error = 'E-postadressen är fel';
+              break;
+            }
+            default: {
+              this.error = 'Något gick fel, prova igen senare.';
+              break;
+            }
+          }
+        });
+    } else {
+      this.error = 'Alla fälten är obligatoriska';
+    }
   }
 }

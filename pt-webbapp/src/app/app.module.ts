@@ -14,6 +14,7 @@ import { CardNavigationComponent } from './pages/member-page/components/card-nav
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PageFooterComponent } from './shared/page-footer/page-footer.component';
 import { AngularFireModule } from '@angular/fire';
+import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
 
 var firebaseConfig = {
   apiKey: 'AIzaSyAX2LfMf1kkZT-lY7z-GVWoA_9OwLw2j0Y',
@@ -34,13 +35,14 @@ var firebaseConfig = {
     CardNavigationComponent,
     HomePageComponent,
     PageFooterComponent,
+    SignUpPageComponent,
   ],
   imports: [
     ReactiveFormsModule,
     BrowserModule,
+    AngularFireModule.initializeApp(firebaseConfig),
     NgbModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(firebaseConfig),
   ],
   providers: [],
   bootstrap: [AppComponent],
