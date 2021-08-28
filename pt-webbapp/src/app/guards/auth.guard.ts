@@ -9,6 +9,12 @@ import {
 import { Observable } from 'rxjs';
 import firebase from 'firebase';
 
+/**
+ * AuthGuard will listen to firebase onIdTokenChange
+ * for updates regarding the user. If the returned
+ * user object is null it will return false otherwise it will return true.
+ * If false it will redirect the user to /login.
+ */
 @Injectable({
   providedIn: 'root',
 })

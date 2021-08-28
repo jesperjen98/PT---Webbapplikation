@@ -38,11 +38,11 @@ export class LoginPageComponent {
               break;
             }
             case StatusCodes.CantAccess: {
-              this.error = 'Fel lösenord';
+              this.error = 'Fel lösenord eller E-post';
               break;
             }
             case StatusCodes.InvalidEmail: {
-              this.error = 'E-postadressen är fel';
+              this.error = 'Fel lösenord eller E-post';
               break;
             }
             default: {

@@ -18,8 +18,7 @@ export class AuthService {
   ) {}
 
   /**
-   * Let the users sign in using email and password. It will set the '
-   * idToken' in sessionStorage.
+   * Let the users sign in using email and password.
    * @param email The user's email adress.
    * @param password The user's password.
    * @returns Promise StatusCodes used to deduce what happend.
@@ -38,7 +37,8 @@ export class AuthService {
               return null;
             });
 
-          idToken && sessionStorage.setItem('idToken', idToken);
+          // idToken && sessionStorage.setItem('idToken', idToken);
+          // console.log(sessionStorage.getItem('idToken'));
         }
         return StatusCodes.Success;
       })
