@@ -1,0 +1,87 @@
+<div class="container-fluid vh-100">
+  <div class="vh-100 row align-middle justify-content-center">
+    <div class="vh-100 col-md-5 align-self-center">
+      <div class="vh-100 row align-items-center justify-content-center">
+        <div class="col align-self-center">
+          <div class="panel panel-primary">
+            <div class="panel-body">
+              <h2>Skapa konto</h2>
+              <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+                <div class="form-group">
+                  <label>Förnamn</label>
+                  <input
+                    formControlName="firstName"
+                    type="text"
+                    class="form-control"
+                    placeholder="Förnamn"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Efternamn</label>
+                  <input
+                    formControlName="lastName"
+                    type="text"
+                    class="form-control"
+                    placeholder="Efternamn"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Födelsedatum</label>
+                  <input
+                    formControlName="birthdate"
+                    type="date"
+                    class="form-control"
+                    placeholder="åååå-mm-dd"
+                  />
+                </div>
+                <!-- Please observe that "Kön" is a default value -->
+                <div class="form-group">
+                  <label>Kön</label>
+                  <select value="default" formControlName="gender">
+                    <option value="default" disable hidden>Kön</option>
+                    <option *ngFor="let gender of getAllGenders()">
+                      {{ gender }}
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Emailadress</label>
+                  <input
+                    formControlName="email"
+                    type="email"
+                    class="form-control"
+                    placeholder="email@exempel.se"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Lösenord</label>
+                  <input
+                    formControlName="password"
+                    type="password"
+                    class="form-control"
+                    placeholder="Lösenord"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Lösenord</label>
+                  <input
+                    formControlName="repeatPassword"
+                    type="password"
+                    class="form-control"
+                    placeholder="Återupprepa Lösenord"
+                  />
+                </div>
+                <p class="error-message">
+                  {{ error }}
+                </p>
+                <button type="submit" class="btn btn-outline-mustard">
+                  Skapa konto
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

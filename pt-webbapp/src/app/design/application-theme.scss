@@ -6,6 +6,8 @@
 
 @import "colors.scss";
 @import "page-footer-theme.scss";
+@import "error-message.scss";
+
 // Set theme colors.
 $theme-colors: (
   "primary":
@@ -57,6 +59,12 @@ body {
   background: map-get($map: $theme-colors, $key: "berlin-blue") !important;
   p {
     color: $light;
+  }
+  a {
+    color: map-get($map: $theme-colors, $key: "mustard");
+  }
+  a:hover {
+    color: map-get($map: $theme-colors, $key: "mustard");
   }
 }
 

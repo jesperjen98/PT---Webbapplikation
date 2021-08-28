@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import firebase from 'firebase';
+
 interface Card {
   url: string;
   description: string;
@@ -56,4 +58,9 @@ export class MemberPageComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  // TODO: Remove this
+  public temporaryLogOut() {
+    firebase.auth().signOut();
+  }
 }
