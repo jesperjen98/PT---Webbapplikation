@@ -1,3 +1,4 @@
+import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import firebase from 'firebase';
 
@@ -14,7 +15,7 @@ interface Card {
 })
 export class MemberPageComponent implements OnInit {
   public cards: Card[] = [];
-  constructor() {
+  constructor(private _authService: AuthService) {
     var kalendar: Card = {
       url: 'https://powerslides.com/wp-content/uploads/2021/01/Training-Plan-Template-1.png',
       description:
@@ -61,6 +62,6 @@ export class MemberPageComponent implements OnInit {
 
   // TODO: Remove this
   public temporaryLogOut() {
-    firebase.auth().signOut();
+    this._authService.signOut();
   }
 }

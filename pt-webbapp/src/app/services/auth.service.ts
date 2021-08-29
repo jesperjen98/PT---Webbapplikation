@@ -1,3 +1,5 @@
+import { Observable, of } from 'rxjs';
+
 import { StatusCodes } from './../models/status-codes';
 import { Genders } from './../models/genders';
 import { Roles } from './../models/roles';
@@ -8,14 +10,34 @@ import {
   AngularFirestoreDocument,
 } from '@angular/fire/firestore';
 import firebase from 'firebase';
+import { switchMap, tap } from 'rxjs/operators';
+
+import { Router } from '@angular/router';
+import { User } from '../models/user';
+
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
+  // TODO: undefined should be avoided if possible (null is enough!)
+  user$: Observable<User | null | undefined>;
   constructor(
     private _angularFireAuth: AngularFireAuth,
-    private _angularFirestore: AngularFirestore
-  ) {}
+    private _angularFirestore: AngularFirestore,
+    private _router: Router
+  ) {
+    this.user$ = this._angularFireAuth.authState.pipe(
+      switchMap((user: firebase.User | null) => {
+        if (user) {
+          return this._angularFirestore
+            .doc<User>(`users/${user.uid}`)
+            .valueChanges();
+        }
+        return of(null);
+      })
+    );
+    // this.user$.toPromise().then((data) => console.log(data));
+  }
 
   /**
    * Let the users sign in using email and password.
@@ -27,20 +49,40 @@ export class AuthService {
     const result: StatusCodes = await this._angularFireAuth
       .signInWithEmailAndPassword(email, password)
       .then(async (userCredential: firebase.auth.UserCredential) => {
-        if (userCredential.user) {
-          const idToken: string | null = await userCredential.user
-            .getIdToken()
-            .then((token: string) => {
-              return token;
+        const user: firebase.User | null = userCredential.user;
+        if (user) {
+          const userDocRef = this._angularFirestore
+            .collection('users')
+            .doc(user.uid);
+          const statusCode: StatusCodes = await userDocRef
+            .get()
+            .toPromise()
+            .then((doc) => {
+              if (doc.exists && doc.get('role') != null) {
+                this._router.navigate([doc.get('role')]);
+                return StatusCodes.Success;
+              }
+              return StatusCodes.NotFound;
             })
-            .catch(() => {
-              return null;
+            .catch((_) => {
+              return StatusCodes.Error;
             });
 
+          return statusCode;
+
+          // this._router.navigate([]);
+          // const idToken: string | null = await userCredential.user
+          //   .getIdToken()
+          //   .then((token: string) => {
+          //     return token;
+          //   })
+          //   .catch(() => {
+          //     return null;
+          //   });
           // idToken && sessionStorage.setItem('idToken', idToken);
           // console.log(sessionStorage.getItem('idToken'));
         }
-        return StatusCodes.Success;
+        return StatusCodes.Error;
       })
       .catch((error: any) => {
         if (error.code == 'auth/user-not-found') {
@@ -52,6 +94,8 @@ export class AuthService {
         }
         return StatusCodes.Error;
       });
+    // this.user$.toPromise().then((data) => console.log(data));
+
     return result;
   }
 
@@ -107,10 +151,9 @@ export class AuthService {
   }
 
   /**
-   *  Checks if the current user is authenticated at Firebase.
-   * @returns Boolean value indicating if the user is signed in or not.
+   * Signs the user out and redirects the user to the home page.
    */
-  public async isAuthenticated(): Promise<boolean> {
-    return false;
+  public signOut() {
+    this._angularFireAuth.signOut().then(() => this._router.navigate(['/']));
   }
 }
