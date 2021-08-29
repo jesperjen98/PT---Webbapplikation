@@ -54,7 +54,7 @@ export class SignUpPageComponent implements OnInit {
         .then((result: StatusCodes) => {
           switch (result) {
             case StatusCodes.Success: {
-              this._router.navigate(['member']);
+              this._router.navigate(['user']);
               this.error = null;
               break;
             }

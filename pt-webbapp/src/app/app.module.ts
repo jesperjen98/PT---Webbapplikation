@@ -14,6 +14,7 @@ import { PageFooterComponent } from './shared/page-footer/page-footer.component'
 import { AngularFireModule } from '@angular/fire';
 import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
 import firebase from 'firebase';
+import { AdminPageComponent } from './pages/admin-page/admin-page.component';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -27,6 +28,7 @@ firebase.initializeApp(firebaseConfig);
     HomePageComponent,
     PageFooterComponent,
     SignUpPageComponent,
+    AdminPageComponent,
   ],
 
   imports: [
