@@ -1,5 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-blue">
-  <a class="navbar-brand" href="#">Lisa Almgren</a>
+<nav *ngIf="isLoaded" class="navbar navbar-expand-lg bg-blue">
   <button
     class="navbar-toggler"
     type="button"
@@ -12,15 +11,43 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="#"
-          >FAQ <span class="sr-only">(current)</span></a
+          >Home <span class="sr-only">(current)</span></a
         >
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          *ngIf="isSignedIn"
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          {{ displayName }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{{ role }}">Mina sidor</a>
+          <a class="dropdown-item" (click)="signOut()" href="">Logga ut</a>
+        </div>
+      </li>
     </ul>
-
-    <button type="submit" class="btn btn-outline-mustard">Logga ut</button>
   </div>
+  <div *ngIf="isSignedIn; else elseBlock"></div>
+  <ng-template #elseBlock
+    ><button (click)="signIn()" class="btn btn-outline-mustard">
+      Logga in
+    </button></ng-template
+  >
 </nav>
