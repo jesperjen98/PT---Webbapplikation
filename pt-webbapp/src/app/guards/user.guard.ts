@@ -38,7 +38,7 @@ export class UserGuard implements CanActivate {
         }
         if (!isUser) {
           console.log('Cant access (user)');
-          this._router.navigate(['/login']);
+          this._router.navigate(['/']);
         }
       })
     );

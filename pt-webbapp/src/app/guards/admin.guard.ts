@@ -38,7 +38,7 @@ export class AdminGuard implements CanActivate {
         }
         if (!isAdmin) {
           console.log('Cant access (admin)');
-          this._router.navigate(['/login']);
+          this._router.navigate(['/']);
         }
       })
     );

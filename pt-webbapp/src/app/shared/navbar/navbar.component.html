@@ -1,53 +1,78 @@
-<nav *ngIf="isLoaded" class="navbar navbar-expand-lg bg-blue">
+<nav
+  class="
+    navbar navbar-expand-lg navbar-dark navbar-default
+    bg-blue
+    align-items-center
+  "
+  role="navigation"
+>
+  <a class="navbar-brand" href="/"
+    ><div class="col">
+      <h5 class="company-heading">Inmotion Fitness</h5>
+      <p class="company-sub-heading">Personlig träning online</p>
+    </div></a
+  >
   <button
-    class="navbar-toggler"
     type="button"
+    class="navbar-toggler"
     data-toggle="collapse"
     data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
+    aria-controls="navbarNav"
     aria-expanded="false"
-    aria-label="Toggle navigation"
+    aria-label="Toggle navigation "
   >
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"> </span>
   </button>
-
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"
-          >Home <span class="sr-only">(current)</span></a
-        >
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tjänster</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a
-          *ngIf="isSignedIn"
-          class="nav-link dropdown-toggle"
-          href="#"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          {{ displayName }}
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="{{ role }}">Mina sidor</a>
-          <a class="dropdown-item" (click)="signOut()" href="">Logga ut</a>
-        </div>
+        <a class="nav-link" href="#">Ansök</a>
       </li>
     </ul>
   </div>
-  <div *ngIf="isSignedIn; else elseBlock"></div>
-  <ng-template #elseBlock
-    ><button (click)="signIn()" class="btn btn-outline-mustard">
-      Logga in
-    </button></ng-template
+
+  <div
+    *ngIf="isLoaded"
+    class="collapse navbar-collapse"
+    id="navbarSupportedContent"
   >
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <div *ngIf="isSignedIn; then thenBlock; else elseBlock"></div>
+        <ng-template #thenBlock>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person-fill account-icon"></i>
+                {{ displayName }}
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-sm-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="{{ role }}">Mina sidor</a>
+                <a class="dropdown-item" (click)="signOut()" href=""
+                  >Logga ut</a
+                >
+              </div>
+            </li>
+          </ul>
+        </ng-template>
+        <ng-template #elseBlock>
+          <a href="/login">Logga in</a>
+        </ng-template>
+      </li>
+    </ul>
+  </div>
 </nav>
