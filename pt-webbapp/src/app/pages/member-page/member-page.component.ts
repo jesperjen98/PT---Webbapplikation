@@ -59,9 +59,4 @@ export class MemberPageComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-
-  // TODO: Remove this
-  public temporaryLogOut() {
-    this._authService.signOut();
-  }
 }
