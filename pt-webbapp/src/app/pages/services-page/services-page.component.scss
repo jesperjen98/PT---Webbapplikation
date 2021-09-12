@@ -1,0 +1,13 @@
+@import "../../design/colors.scss";
+
+h2 {
+  color: $light;
+}
+
+h4 {
+  color: map-get($map: $custom-colors, $key: "mustard");
+}
+
+h5 {
+  color: map-get($map: $custom-colors, $key: "mustard");
+}

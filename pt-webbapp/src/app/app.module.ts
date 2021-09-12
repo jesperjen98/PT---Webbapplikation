@@ -21,6 +21,7 @@ import { StartComponent } from './pages/home-page/components/start/start.compone
 import { ProcessComponent } from './pages/home-page/components/process/process.component';
 import { MyServicesComponent } from './pages/home-page/components/my-services/my-services.component';
 import { FaqComponent } from './pages/home-page/components/faq/faq.component';
+import { ServicesPageComponent } from './pages/services-page/services-page.component';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -41,6 +42,7 @@ firebase.initializeApp(firebaseConfig);
     ProcessComponent,
     MyServicesComponent,
     FaqComponent,
+    ServicesPageComponent,
   ],
 
   imports: [

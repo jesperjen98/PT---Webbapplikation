@@ -6,27 +6,36 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg" *ngFor="let service of services">
-        <div class="card my-5 mx-sm-4">
-          <div class="card-title">
-            <img src="{{ service.image }}" />
-            <div class="title">
-              <h3>{{ service.title }}</h3>
+        <a href="services">
+          <div class="card my-5 mx-sm-4">
+            <div class="card-title">
+              <img src="{{ service.image }}" />
+              <div class="title">
+                <h3>{{ service.title }}</h3>
+              </div>
+            </div>
+            <div class="card-body">
+              <div [innerHTML]="service.info"></div>
+            </div>
+            <div
+              class="
+                card-footer
+                text-right
+                py-3
+                border-0
+                row
+                align-items-center
+              "
+            >
+              <div class="col text-left">
+                <h6 *ngIf="service.price">{{ service.price }}</h6>
+              </div>
+              <div class="col">
+                <a href="services">Läs mer <i class="bi bi-arrow-right"></i></a>
+              </div>
             </div>
           </div>
-          <div class="card-body">
-            <div [innerHTML]="service.info"></div>
-          </div>
-          <div
-            class="card-footer text-right py-3 border-0 row align-items-center"
-          >
-            <div class="col text-left">
-              <h6 *ngIf="service.price">{{ service.price }}</h6>
-            </div>
-            <div class="col">
-              <a href="#">Läs mer <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
