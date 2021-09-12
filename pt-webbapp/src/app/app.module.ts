@@ -15,6 +15,13 @@ import { AngularFireModule } from '@angular/fire';
 import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
 import firebase from 'firebase';
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
+import { AboutMeComponent } from './pages/home-page/components/about-me/about-me.component';
+import { ContactMeComponent } from './pages/home-page/components/contact-me/contact-me.component';
+import { StartComponent } from './pages/home-page/components/start/start.component';
+import { ProcessComponent } from './pages/home-page/components/process/process.component';
+import { MyServicesComponent } from './pages/home-page/components/my-services/my-services.component';
+import { FaqComponent } from './pages/home-page/components/faq/faq.component';
+import { ServicesPageComponent } from './pages/services-page/services-page.component';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -29,6 +36,13 @@ firebase.initializeApp(firebaseConfig);
     PageFooterComponent,
     SignUpPageComponent,
     AdminPageComponent,
+    AboutMeComponent,
+    ContactMeComponent,
+    StartComponent,
+    ProcessComponent,
+    MyServicesComponent,
+    FaqComponent,
+    ServicesPageComponent,
   ],
 
   imports: [

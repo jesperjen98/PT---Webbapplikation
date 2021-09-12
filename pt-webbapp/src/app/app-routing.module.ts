@@ -1,3 +1,4 @@
+import { ServicesPageComponent } from './pages/services-page/services-page.component';
 import { AdminGuard } from './guards/admin.guard';
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
 import { Roles } from './models/roles';
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomePageComponent,
+  },
+  {
+    path: 'services',
+    component: ServicesPageComponent,
   },
   {
     path: 'login',

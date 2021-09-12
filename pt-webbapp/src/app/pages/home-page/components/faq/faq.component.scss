@@ -1,0 +1,9 @@
+@import "src/app/design/colors.scss";
+
+h1 {
+  color: $light;
+}
+
+h3 {
+  color: map-get($map: $custom-colors, $key: "mustard");
+}

@@ -1,0 +1,85 @@
+@import "src/app/design/colors.scss";
+
+.about-me-section {
+  background-image: url("https://image.shutterstock.com/image-photo/modern-gym-interior-equipment-fitness-600w-559827604.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+a {
+  text-decoration: none;
+  .card {
+    width: auto;
+    transition: 0.5s;
+    cursor: pointer;
+    .signature {
+      color: map-get($map: $custom-colors, $key: "berlin-blue");
+      font-weight: bold;
+      font-size: large;
+    }
+    a {
+      transition: 0.5s;
+      font-size: small;
+      font-weight: normal;
+      color: map-get($map: $custom-colors, $key: "berlin-blue");
+    }
+  }
+  .card-body {
+    color: $dark;
+  }
+  .card-footer {
+    color: $dark;
+    font-weight: bold;
+    font-size: large;
+  }
+  .card-title {
+    padding-top: 25px;
+    padding-left: 25px;
+    // color: map-get($map: $custom-colors, $key: "mustard");
+    color: map-get($map: $custom-colors, $key: "berlin-blue");
+    font-size: xx-large;
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    a {
+      transition: 0.5s;
+      font-size: large;
+      font-weight: normal;
+      color: map-get($map: $custom-colors, $key: "berlin-blue");
+    }
+  }
+  .card::before,
+  .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform 0.3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: "";
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before,
+  .card:hover::after,
+  .card:focus::before,
+  .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.panel {
+  background-color: $light;
+}
