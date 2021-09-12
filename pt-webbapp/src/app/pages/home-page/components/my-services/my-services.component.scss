@@ -1,0 +1,100 @@
+@import "src/app/design/colors.scss";
+
+h1 {
+  color: map-get($map: $custom-colors, $key: "mustard");
+}
+img {
+  max-width: 100%;
+  height: 100%;
+}
+h3 {
+  color: $light;
+  text-shadow: 2px 2px $dark;
+}
+
+.card {
+  border: none;
+  width: auto;
+  transition: 0.5s;
+  .signature {
+    color: map-get($map: $custom-colors, $key: "berlin-blue");
+    font-weight: bold;
+    font-size: large;
+  }
+  a {
+    transition: 0.5s;
+    font-size: small;
+    font-weight: normal;
+    color: map-get($map: $custom-colors, $key: "berlin-blue");
+  }
+}
+.card-body {
+  color: $dark;
+}
+.card-footer {
+  color: $dark;
+  font-weight: bold;
+  font-size: large;
+}
+.card-title {
+  position: relative;
+  text-align: center;
+  color: map-get($map: $custom-colors, $key: "berlin-blue");
+  font-size: xx-large;
+  font-weight: bold;
+  transition: 1s;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(44, 42, 42, 0.4);
+    position: absolute;
+    bottom: 0px;
+  }
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  a {
+    transition: 0.5s;
+    font-size: large;
+    font-weight: normal;
+    color: map-get($map: $custom-colors, $key: "berlin-blue");
+  }
+  .title {
+    transition: 0.5s;
+    height: 110px;
+    width: 100%;
+    background-color: rgba(44, 42, 42, 0.4);
+    position: absolute;
+    bottom: 0px;
+  }
+}
+.card::before,
+.card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform 0.3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: "";
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before,
+.card:hover::after,
+.card:focus::before,
+.card:focus::after {
+  transform: scale3d(1, 1, 1);
+}

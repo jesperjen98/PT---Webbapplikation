@@ -1,6 +1,5 @@
 import { StatusCodes } from './../../models/status-codes';
 import { AuthService } from './../../services/auth.service';
-import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -18,7 +17,6 @@ export class LoginPageComponent {
 
   constructor(
     private _formBuilder: FormBuilder,
-    private _router: Router,
     private _authService: AuthService
   ) {}
 
@@ -29,7 +27,6 @@ export class LoginPageComponent {
         .then((result: StatusCodes) => {
           switch (result) {
             case StatusCodes.Success: {
-              // this._router.navigate(['user']);
               this.error = null;
               break;
             }

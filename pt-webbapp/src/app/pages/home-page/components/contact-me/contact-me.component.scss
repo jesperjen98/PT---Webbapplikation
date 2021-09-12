@@ -1,0 +1,32 @@
+@import "src/app/design/colors.scss";
+
+.contact-me-section {
+  background-color: $light;
+}
+
+.card {
+  width: auto;
+  .signature {
+    color: $dark;
+    font-weight: bold;
+    font-size: large;
+  }
+  a {
+    font-size: small;
+    font-weight: normal;
+  }
+}
+.card-body {
+  color: $dark;
+}
+.card-footer {
+  color: $dark;
+  font-weight: bold;
+  font-size: large;
+}
+.card-title {
+  padding-top: 25px;
+  padding-left: 25px;
+  color: map-get($map: $custom-colors, $key: "mustard");
+  font-size: xx-large;
+}
