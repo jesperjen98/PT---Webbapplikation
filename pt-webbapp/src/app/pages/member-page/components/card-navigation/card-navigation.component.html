@@ -1,10 +1,18 @@
-<div class="card">
-  <img src="{{ url }}" class="card-img-top" style="height: 150px" alt="..." />
-  <div class="card-body">
-    <h5 class="card-title" style="">{{ title }}</h5>
-    <p class="card-text">
+<a href="#">
+  <div class="card my-4 mx-sm-3">
+    <div class="card-title">
+      <img src="{{ url }}" />
+      <div class="title">
+        <h3>{{ title }}</h3>
+      </div>
+    </div>
+    <div class="card-body">
       {{ description }}
-    </p>
-    <a href="#" class="btn btn-mustard">Go somewhere</a>
+    </div>
+    <div class="card-footer text-right py-3 border-0 row align-items-center">
+      <div class="col">
+        <a href="#"><i class="bi bi-arrow-right-circle"></i></a>
+      </div>
+    </div>
   </div>
-</div>
+</a>

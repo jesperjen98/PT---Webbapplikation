@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<p>
+<!-- <p>
   <ngb-progressbar
     [showValue]="false"
     [striped]="true"
@@ -9,16 +9,17 @@
     [value]="100"
     >Fyll i din hälsodeklaration!</ngb-progressbar
   >
-</p>
-<div class="container">
-  <div class="row align-items-center">
-    <div class="col-sm" *ngFor="let card of cards">
-      <app-card-navigation
-        [description]="card.description"
-        [title]="card.title"
-        [url]="card.url"
-      ></app-card-navigation>
-      <div style="width: fit-content; height: 10px"></div>
+</p> -->
+<section class="navigation-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let card of cards">
+        <app-card-navigation
+          [description]="card.description"
+          [title]="card.title"
+          [url]="card.url"
+        ></app-card-navigation>
+      </div>
     </div>
   </div>
-</div>
+</section>
