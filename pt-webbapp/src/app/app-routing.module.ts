@@ -1,3 +1,5 @@
+import { MemberHomePageComponent } from './pages/member-page/pages/member-home-page/member-home-page.component';
+import { HealthDeclarationPageComponent } from './pages/member-page/pages/health-declaration-page/health-declaration-page.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
 import { AdminGuard } from './guards/admin.guard';
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
@@ -31,6 +33,16 @@ const routes: Routes = [
     path: Roles.User,
     component: MemberPageComponent,
     canActivate: [UserGuard],
+    children: [
+      {
+        path: '',
+        component: MemberHomePageComponent,
+      },
+      {
+        path: 'healthDeclaration',
+        component: HealthDeclarationPageComponent,
+      },
+    ],
   },
   {
     path: Roles.Admin,

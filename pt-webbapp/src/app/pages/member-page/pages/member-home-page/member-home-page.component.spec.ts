@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CardNavigationComponent } from './card-navigation.component';
+import { MemberHomePageComponent } from './member-home-page.component';
 
-describe('CardNavigationComponent', () => {
-  let component: CardNavigationComponent;
-  let fixture: ComponentFixture<CardNavigationComponent>;
+describe('MemberHomePageComponent', () => {
+  let component: MemberHomePageComponent;
+  let fixture: ComponentFixture<MemberHomePageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CardNavigationComponent ]
+      declarations: [ MemberHomePageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CardNavigationComponent);
+    fixture = TestBed.createComponent(MemberHomePageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

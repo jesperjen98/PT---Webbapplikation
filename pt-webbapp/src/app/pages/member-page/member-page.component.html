@@ -1,25 +1,3 @@
 <app-navbar></app-navbar>
-<!-- <p>
-  <ngb-progressbar
-    [showValue]="false"
-    [striped]="true"
-    [animated]="true"
-    height="2rem"
-    type="danger"
-    [value]="100"
-    >Fyll i din hälsodeklaration!</ngb-progressbar
-  >
-</p> -->
-<section class="navigation-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4" *ngFor="let card of cards">
-        <app-card-navigation
-          [description]="card.description"
-          [title]="card.title"
-          [url]="card.url"
-        ></app-card-navigation>
-      </div>
-    </div>
-  </div>
-</section>
+<router-outlet></router-outlet>
+<app-page-footer></app-page-footer>

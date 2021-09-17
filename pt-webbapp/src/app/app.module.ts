@@ -8,7 +8,6 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MemberPageComponent } from './pages/member-page/member-page.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { CardNavigationComponent } from './pages/member-page/components/card-navigation/card-navigation.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PageFooterComponent } from './shared/page-footer/page-footer.component';
 import { AngularFireModule } from '@angular/fire';
@@ -22,6 +21,8 @@ import { ProcessComponent } from './pages/home-page/components/process/process.c
 import { MyServicesComponent } from './pages/home-page/components/my-services/my-services.component';
 import { FaqComponent } from './pages/home-page/components/faq/faq.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
+import { HealthDeclarationPageComponent } from './pages/member-page/pages/health-declaration-page/health-declaration-page.component';
+import { MemberHomePageComponent } from './pages/member-page/pages/member-home-page/member-home-page.component';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -31,7 +32,6 @@ firebase.initializeApp(firebaseConfig);
     LoginPageComponent,
     MemberPageComponent,
     NavbarComponent,
-    CardNavigationComponent,
     HomePageComponent,
     PageFooterComponent,
     SignUpPageComponent,
@@ -43,6 +43,8 @@ firebase.initializeApp(firebaseConfig);
     MyServicesComponent,
     FaqComponent,
     ServicesPageComponent,
+    HealthDeclarationPageComponent,
+    MemberHomePageComponent,
   ],
 
   imports: [

@@ -1,0 +1,48 @@
+<!-- <p>
+  <ngb-progressbar
+    [showValue]="false"
+    [striped]="true"
+    [animated]="true"
+    height="2rem"
+    type="danger"
+    [value]="100"
+    >Fyll i din hälsodeklaration!</ngb-progressbar
+  >
+</p> -->
+<section class="navigation-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let card of navigationCards">
+        <a href="{{ card.redirectTo }}">
+          <div class="card my-4 mx-sm-3">
+            <div class="card-title">
+              <img src="{{ card.imageSrc }}" />
+              <div class="title">
+                <h3>{{ card.title }}</h3>
+              </div>
+            </div>
+            <div class="card-body">
+              {{ card.description }}
+            </div>
+            <div
+              class="
+                card-footer
+                text-right
+                py-3
+                border-0
+                row
+                align-items-center
+              "
+            >
+              <div class="col">
+                <a href="{{ card.redirectTo }}"
+                  ><i class="bi bi-arrow-right-circle"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

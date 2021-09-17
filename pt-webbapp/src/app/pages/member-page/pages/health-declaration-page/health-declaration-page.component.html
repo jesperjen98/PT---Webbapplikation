@@ -1,0 +1,315 @@
+<section class="instructions-section">
+  <div class="container">
+    <h1 class="pt-4">Hälsodeklaration</h1>
+    <h3 class="pt-4">Instruktioner</h3>
+    <p>
+      I denna hälsodeklaration kommer du loggföra alla faktorer som kan vara
+      relevant för din hälsa. Frågorna är av personlig karaktär. Svara så ärligt
+      och utförligt du förmår. Vissa frågor är väldigt specifika, andra är mer
+      öppna för tolkning. Detta är ett medvetet val för att ge dig utrymme att
+      reflektera över din egen hälsa. Majoriteten av frågorna berör din fysiska
+      hälsa, några frågor behandlar din mentala hälsa - båda delar är lika
+      viktiga för din sammanvägda hälsa
+    </p>
+    <p>
+      Du får här även möjligheten att presentera din målsättning, planera din
+      process och ha den med dig ständigt för att enkelt kunna återkoppla till
+      det åtagande du gjort för din hälsa och välmående.
+    </p>
+    <p>
+      Du får även utrymme för tydlig och effektiv utvärdering och uppföljning av
+      hur din hälsa utvecklas över tid.
+    </p>
+  </div>
+</section>
+
+<section class="personal-information-section">
+  <div class="container my-4 py-4 bg-light">
+    <h2 class="pt-2">Personlig information</h2>
+    <form [formGroup]="personalInformationform" (ngSubmit)="submit()">
+      <div class="form-group">
+        <label>Ange din ålder*</label>
+        <input
+          formControlName="age"
+          type="number"
+          class="form-control"
+          placeholder="Ålder"
+        />
+        <p class="error">{{ personalInformationformError }}</p>
+      </div>
+      <div class="form-group">
+        <label
+          >Vad jobbar du med
+          <i class="bi bi-question-circle tip"
+            ><span
+              >Det är viktigt att ta hänsyn till vardagsmotion, så för att få en
+              klarare bild så måste vi veta vad du jobbar med.
+            </span></i
+          ></label
+        >
+        <input
+          formControlName="profession"
+          title="Det är viktigt att ta hänsyn till vardagsmotion, så för att få en klarare bild så måste vi veta vad du jobbar med."
+          type="text"
+          class="form-control"
+          placeholder="Yrke"
+        />
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="medical-history-section">
+  <div class="container my-4 py-4 bg-light">
+    <h2 class="pt-2">Sjukhistoria</h2>
+    <form [formGroup]="medicalHistoryForm" (ngSubmit)="submit()">
+      <div class="form-group">
+        <label>Sjukdommar i släkten</label>
+        <textarea
+          formControlName="diseases"
+          type="text"
+          class="form-control"
+          placeholder="Eventuella sjukdommar"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label>Diagnoser</label>
+        <textarea
+          formControlName="diagnoses"
+          type="text"
+          class="form-control"
+          placeholder="Eventuella diagnoser"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label>Operationer</label>
+        <textarea
+          formControlName="operations"
+          type="text"
+          class="form-control"
+          placeholder="Eventuella operationer"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label>Allergier</label>
+        <textarea
+          formControlName="allergies"
+          type="text"
+          class="form-control"
+          placeholder="Eventuella Allergier"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label>Har du några nuvarande skador, om ja vilka?</label>
+        <textarea
+          formControlName="injuries"
+          type="text"
+          class="form-control"
+          placeholder="Eventuella skador"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label>Mediciner</label>
+        <textarea
+          formControlName="medications"
+          type="text"
+          class="form-control"
+          placeholder="Eventuella mediciner"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label
+          >Hur upplever du din egen hälsa
+          <i class="bi bi-question-circle tip"
+            ><span
+              >Ibland blir man friskförklarad från en sjukdom eller diagnos, men
+              känner sig ändå sjuk eller i dålig form. Man kan även ha en
+              sjukdom eller diagnos men känna sig frisk eller obehindrad i
+              situationen. Hur upplever du din egen hälsa?
+            </span></i
+          ></label
+        >
+        <textarea
+          formControlName="perceptionOfHealth"
+          type="text"
+          class="form-control"
+          placeholder="Uppfattning om min egna hälsa"
+          rows="3"
+        ></textarea>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="lifestyle-physical-section">
+  <div class="container my-4 py-4 bg-light">
+    <h2 class="pt-2">Livsstil - Fysisk aktivitet</h2>
+    <form [formGroup]="lifestylePhysicalForm" (submit)="submit()">
+      <div class="form-group">
+        <label
+          >Aktivitetsnivå*
+          <i class="bi bi-question-circle tip"
+            ><span
+              >Hur aktiv är du i vardagen? Tänk på till exempel om du har en
+              hund du går med, cyklar till jobbet osv.
+            </span></i
+          >
+        </label>
+        <select class="form-control" formControlName="activeLevel">
+          <option [ngValue]="null" selected disabled hidden>
+            Välj aktivitetsnivå
+          </option>
+          <option value="Mycket aktiv">Mycket aktiv</option>
+          <option value="Aktiv">Aktiv</option>
+          <option value="Inaktiv">Inaktiv</option>
+          <option value="Stillasittande">Stillasittande</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Jag tränar*</label>
+        <select class="form-control" formControlName="traningLevel">
+          <option [ngValue]="null" selected disabled hidden>
+            Hur många gånger i veckan tränar du?
+          </option>
+          <option value="Aldrig">Aldrig</option>
+          <option value="1 gång i veckan">1 gång i veckan</option>
+          <option value="2 gånger i veckan">2 gånger i veckan</option>
+          <option value="3 gånger i veckan">3 gånger i veckan</option>
+          <option value="4 gånger i veckan">4 gånger i veckan</option>
+          <option value="5 gånger i veckan">5 gånger i veckan</option>
+          <option value="Mer än 5 gånger i veckan">
+            Mer än 5 gånger i veckan
+          </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Typ av träning (om applicerbart)</label>
+        <textarea
+          formControlName="typeOfTraning"
+          type="text"
+          class="form-control"
+          placeholder="Vad tränar du? Styrka, kondition osv... "
+          rows="3"
+        ></textarea>
+      </div>
+      <p class="error">{{ lifestylePhysicalFormError }}</p>
+    </form>
+  </div>
+</section>
+
+<section class="lifestyle-substance-use-section">
+  <div class="container my-4 py-4 bg-light">
+    <h2 class="pt-2">Livsstil - Substansbruk</h2>
+    <form [formGroup]="lifestylesubstanceUseForm" (submit)="submit()">
+      <label>
+        Nikotinanvändning
+        <i class="bi bi-question-circle tip"
+          ><span>Välja alla som stämmer med dig </span></i
+        >
+      </label>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input
+            formControlName="smoking"
+            type="checkbox"
+            class="form-check-input"
+            value=""
+          />Jag röker
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input
+            formControlName="snusing"
+            type="checkbox"
+            class="form-check-input"
+            value=""
+          />Jag snusar
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input
+            formControlName="nicotine"
+            type="checkbox"
+            class="form-check-input"
+            value=""
+          />Jag får i mig nikotin på annat sätt
+        </label>
+      </div>
+      <div class="form-group pt-3">
+        <label>Alkoholkonsumtion</label>
+        <select class="form-control" formControlName="alcoholConsumption">
+          <option [ngValue]="null" selected disabled hidden>
+            Hur många gånger i veckan dricker du alkohol?
+          </option>
+          <option value="Aldrig">Aldrig</option>
+          <option value="1 gång i veckan">1 gång i veckan</option>
+          <option value="2 gånger i veckan">2 gånger i veckan</option>
+          <option value="3 gånger i veckan">3 gånger i veckan</option>
+          <option value="4 gånger i veckan">4 gånger i veckan</option>
+          <option value="5 gånger i veckan">5 gånger i veckan</option>
+          <option value="Mer än 5 gånger i veckan">
+            Mer än 5 gånger i veckan
+          </option>
+        </select>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="goals-section">
+  <div class="container my-4 py-4 bg-light">
+    <h2 class="pt-2">Mina Mål</h2>
+    <p class="descripton">
+      Att sätta tydliga och konkreta mål som är viktiga för just dig är en
+      viktig del av processen. Vad vill just du få ut av din träning?
+    </p>
+    <form [formGroup]="goalsForm" (submit)="submit()">
+      <div class="form-group">
+        <label>Mina mål*</label>
+        <textarea
+          formControlName="goals"
+          type="text"
+          class="form-control"
+          placeholder="mina mål är ..."
+          rows="5"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label>Varför har jag dessa mål*</label>
+        <textarea
+          formControlName="whyIhaveMyGoals"
+          type="text"
+          class="form-control"
+          placeholder="Jag har satt dessa mål för att jag vill ..."
+          rows="5"
+        ></textarea>
+      </div>
+    </form>
+    <p class="error">{{ goalsFormError }}</p>
+  </div>
+</section>
+
+<section class="submit-section">
+  <div class="container my-4 py-4 bg-light">
+    <h2 class="pt-2">Nu är du klar</h2>
+    <p class="descripton">
+      Läs igenom dina svar en sista gång och tryck sedan på "Skicka in
+      hälsodeklaration". Kom ihåg att många frågor är frivilliga men det är
+      alltid bättre att vara så utförlig som möjligt. De frågor markerade med
+      <b>*</b>
+      är obligatoriska.
+    </p>
+    <button type="submit" (click)="submit()" class="btn btn-mustard">
+      Skicka in hälsodeklaration
+    </button>
+    <p class="error">{{ error }}</p>
+  </div>
+</section>
