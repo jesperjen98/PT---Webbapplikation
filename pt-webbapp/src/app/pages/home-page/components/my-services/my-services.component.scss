@@ -1,15 +1,15 @@
-@import "src/app/design/colors.scss";
+@import "../../../../design/colors.scss";
 
 h1 {
-  color: map-get($map: $custom-colors, $key: "mustard");
+  color: map-get($map: $theme-colors, $key: title-color-light);
 }
 img {
   max-width: 100%;
   height: 100%;
 }
 h3 {
-  color: $light;
-  text-shadow: 2px 2px $dark;
+  color: map-get($map: $theme-colors, $key: title-color-light);
+  text-shadow: 2px 2px map-get($map: $theme-colors, $key: dark);
 }
 
 a {
@@ -19,7 +19,7 @@ a {
     width: auto;
     transition: 0.5s;
     .signature {
-      color: map-get($map: $custom-colors, $key: "berlin-blue");
+      color: map-get($map: $theme-colors, $key: text-color-dark);
       font-weight: bold;
       font-size: large;
     }
@@ -27,21 +27,21 @@ a {
       transition: 0.5s;
       font-size: small;
       font-weight: normal;
-      color: map-get($map: $custom-colors, $key: "berlin-blue");
+      color: map-get($map: $theme-colors, $key: dark);
     }
   }
   .card-body {
-    color: $dark;
+    color: map-get($map: $theme-colors, $key: text-color-dark);
   }
   .card-footer {
-    color: $dark;
+    color: map-get($map: $theme-colors, $key: text-color-dark);
     font-weight: bold;
     font-size: large;
   }
   .card-title {
     position: relative;
     text-align: center;
-    color: map-get($map: $custom-colors, $key: "berlin-blue");
+    color: map-get($map: $theme-colors, $key: title-color-dark);
     font-size: xx-large;
     font-weight: bold;
     transition: 1s;
@@ -64,7 +64,7 @@ a {
       transition: 0.5s;
       font-size: large;
       font-weight: normal;
-      color: map-get($map: $custom-colors, $key: "berlin-blue");
+      color: map-get($map: $theme-colors, $key: primary);
     }
     .title {
       transition: 0.5s;

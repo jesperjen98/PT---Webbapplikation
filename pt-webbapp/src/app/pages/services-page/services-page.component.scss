@@ -1,13 +1,13 @@
 @import "../../design/colors.scss";
 
 h2 {
-  color: $light;
+  color: map-get($map: $theme-colors, $key: title-color-light);
 }
 
 h4 {
-  color: map-get($map: $custom-colors, $key: "mustard");
+  color: map-get($map: $theme-colors, $key: sub-title-color);
 }
 
 h5 {
-  color: map-get($map: $custom-colors, $key: "mustard");
+  color: map-get($map: $theme-colors, $key: sub-title-color);
 }

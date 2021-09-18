@@ -1,14 +1,17 @@
-@import "src/app/design/colors.scss";
+@import "../../../../design/colors.scss";
 
 h1 {
-  color: map-get($map: $custom-colors, $key: "mustard");
+  color: map-get($map: $theme-colors, $key: title-color-light);
+}
+h2 {
+  color: map-get($map: $theme-colors, $key: title-color-dark);
 }
 
 .card {
   width: auto;
   transition: 0.5s;
   .signature {
-    color: map-get($map: $custom-colors, $key: "berlin-blue");
+    color: map-get($map: $theme-colors, $key: primary);
     font-weight: bold;
     font-size: large;
   }
@@ -16,14 +19,14 @@ h1 {
     transition: 0.5s;
     font-size: small;
     font-weight: normal;
-    color: map-get($map: $custom-colors, $key: "berlin-blue");
+    color: map-get($map: $theme-colors, $key: primary);
   }
 }
 .card-body {
-  color: $dark;
+  color: map-get($map: $theme-colors, $key: text-color-dark);
 }
 .card-footer {
-  color: $dark;
+  color: map-get($map: $theme-colors, $key: text-color-dark);
   font-weight: bold;
   font-size: large;
 }
@@ -31,7 +34,7 @@ h1 {
   text-align: center;
   padding-top: 25px;
   padding-left: 25px;
-  color: map-get($map: $custom-colors, $key: "berlin-blue");
+  color: map-get($map: $theme-colors, $key: primary);
   font-size: xx-large;
   font-weight: bold;
   transition: 1s;
@@ -43,7 +46,7 @@ h1 {
     transition: 0.5s;
     font-size: large;
     font-weight: normal;
-    color: map-get($map: $custom-colors, $key: "berlin-blue");
+    color: map-get($map: $theme-colors, $key: primary);
   }
 }
 .card::before,

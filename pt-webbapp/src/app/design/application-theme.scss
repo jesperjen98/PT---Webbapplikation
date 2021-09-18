@@ -5,72 +5,55 @@
 // @author Johan Ehinger (https://github.com/johanehinger)
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import "colors.scss";
-@import "page-footer-theme.scss";
 @import "error-message.scss";
-
-// Set theme colors.
-$theme-colors: (
-  "primary":
-    map-get(
-      $map: $custom-colors,
-      $key: "berlin-blue",
-    ),
-  "secondary":
-    map-get(
-      $map: $custom-colors,
-      $key: "mustard",
-    ),
-);
-
-$theme-colors: map-merge($theme-colors, $custom-colors);
 
 .panel {
   padding: 25px 25px 25px 25px;
   h2 {
-    color: map-get($map: $theme-colors, $key: "mustard");
+    color: map-get($map: $theme-colors, $key: sub-title-color);
   }
   label {
-    color: $light;
+    color: map-get($map: $theme-colors, $key: text-color-light);
   }
   .form-control {
-    border-color: map-get($map: $theme-colors, $key: "berlin-blue");
+    border-color: map-get($map: $theme-colors, $key: primary);
   }
   .form-control:focus {
-    border-color: map-get($map: $theme-colors, $key: "berlin-blue");
-    box-shadow: inset 0 1px 1px
-        map-get($map: $theme-colors, $key: "berlin-blue"),
-      0 0 8px map-get($map: $theme-colors, $key: "mustard");
+    border-color: map-get($map: $theme-colors, $key: primary);
+    box-shadow: inset 0 1px 1px map-get($map: $theme-colors, $key: primary),
+      0 0 8px map-get($map: $theme-colors, $key: secondary);
   }
   .panel-body {
-    color: $light;
+    color: map-get($map: $theme-colors, $key: text-color-light);
   }
   .panel-heading {
-    color: map-get($map: $theme-colors, $key: "mustard");
+    color: map-get($map: $theme-colors, $key: sub-title-color);
     font-size: xx-large;
   }
   .panel-footer {
-    color: map-get($map: $theme-colors, $key: "mustard");
+    color: map-get($map: $theme-colors, $key: sub-title-color);
     font-size: large;
   }
 }
 
 body {
   height: 100%;
-  background: map-get($map: $theme-colors, $key: "berlin-blue") !important;
+  background: map-get($map: $theme-colors, $key: background-color) !important;
+
   p {
-    color: $light;
+    color: map-get($map: $theme-colors, $key: text-color-light);
   }
   a {
-    color: map-get($map: $theme-colors, $key: "mustard");
+    color: map-get($map: $theme-colors, $key: secondary);
   }
   a:hover {
-    color: map-get($map: $theme-colors, $key: "mustard");
+    color: map-get($map: $theme-colors, $key: secondary);
   }
 }
 
 .navbar {
   a {
-    color: map-get($map: $theme-colors, $key: "mustard");
+    color: map-get($map: $theme-colors, $key: secondary);
   }
 }
 

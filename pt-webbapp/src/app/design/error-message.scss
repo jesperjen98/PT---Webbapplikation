@@ -1,5 +1,5 @@
-@import "colors.scss";
+@import "./colors.scss";
 
 .error-message {
-  color: $warning;
+  color: map-get($map: $theme-colors, $key: danger);
 }

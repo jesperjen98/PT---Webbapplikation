@@ -1,13 +1,13 @@
-@import "../../design/application-theme.scss";
+@import "../../design/colors.scss";
 .account-icon {
   font-size: 24px;
-  color: map-get($map: $custom-colors, $key: "mustard");
+  color: map-get($map: $theme-colors, $key: secondary);
 }
 
 .company-heading {
   margin: 0px;
   padding: 0px;
-  color: map-get($map: $custom-colors, $key: "mustard");
+  color: map-get($map: $theme-colors, $key: secondary);
 }
 
 .company-sub-heading {

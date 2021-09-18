@@ -14,7 +14,7 @@ a {
     min-height: 450px;
     transition: 0.5s;
     .signature {
-      color: map-get($map: $custom-colors, $key: "berlin-blue");
+      color: map-get($map: $theme-colors, $key: primary);
       font-weight: bold;
       font-size: large;
     }
@@ -22,21 +22,21 @@ a {
       transition: 0.5s;
       font-size: normal;
       font-weight: normal;
-      color: map-get($map: $custom-colors, $key: "berlin-blue");
+      color: map-get($map: $theme-colors, $key: primary);
     }
   }
   .card-body {
-    color: $dark;
+    color: map-get($map: $theme-colors, $key: text-color-dark);
   }
   .card-footer {
-    color: $dark;
+    color: map-get($map: $theme-colors, $key: text-color-dark);
     font-weight: bold;
     font-size: large;
   }
   .card-title {
     position: relative;
     text-align: center;
-    color: map-get($map: $custom-colors, $key: "berlin-blue");
+    color: map-get($map: $theme-colors, $key: primary);
     font-size: xx-large;
     font-weight: bold;
     transition: 1s;
@@ -59,7 +59,7 @@ a {
       transition: 0.5s;
       font-size: xx-large;
       font-weight: normal;
-      color: map-get($map: $custom-colors, $key: "berlin-blue");
+      color: map-get($map: $theme-colors, $key: primary);
     }
     .title {
       transition: 0.5s;

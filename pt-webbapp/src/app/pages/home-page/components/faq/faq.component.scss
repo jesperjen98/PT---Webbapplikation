@@ -1,9 +1,9 @@
-@import "src/app/design/colors.scss";
+@import "../../../../design/colors.scss";
 
 h1 {
-  color: $light;
+  color: map-get($map: $theme-colors, $key: "title-color-light");
 }
 
 h3 {
-  color: map-get($map: $custom-colors, $key: "mustard");
+  color: map-get($map: $theme-colors, $key: "sub-title-color");
 }
