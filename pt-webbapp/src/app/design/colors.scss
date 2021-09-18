@@ -1,17 +1,17 @@
-// Specific colors chosen by customer.
-$custom-colors: (
-  "berlin-blue": #0b1e33,
-  "blue": #013c58,
-  "blue-teal": #00537a,
-  "mustard": #f5a201,
-  "yellow": #ffba42,
-  "light-yellow": #ffd35b,
+$theme-colors: (
+  primary: #0b1e33,
+  complementary: #013c58,
+  secondary: #eb9d02,
+  background-color: #0b1e33,
+  title-color-light: #ffffff,
+  title-color-dark: #020509,
+  sub-title-color: #eb9d02,
+  text-color-dark: #020509,
+  text-color-light: #ffffff,
+  light: #ffffff,
+  dark: #020509,
+  success: #4cbb17,
+  info: #f68cc6,
+  danger: #ff2400,
+  warning: #d35e0e,
 );
-
-// System colors
-$success: #4cbb17;
-$danger: #ff2400;
-$warning: #d35e0e;
-$info: #f68cc6;
-$light: #ffffff;
-$dark: #020509;

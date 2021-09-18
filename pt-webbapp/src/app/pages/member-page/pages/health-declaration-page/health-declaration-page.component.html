@@ -198,7 +198,7 @@
           rows="3"
         ></textarea>
       </div>
-      <p class="error">{{ lifestylePhysicalFormError }}</p>
+      <p class="error-message">{{ lifestylePhysicalFormError }}</p>
     </form>
   </div>
 </section>
@@ -293,7 +293,7 @@
         ></textarea>
       </div>
     </form>
-    <p class="error">{{ goalsFormError }}</p>
+    <p class="error-message">{{ goalsFormError }}</p>
   </div>
 </section>
 
@@ -307,9 +307,9 @@
       <b>*</b>
       är obligatoriska.
     </p>
-    <button type="submit" (click)="submit()" class="btn btn-mustard">
-      Skicka in hälsodeklaration
+    <button type="submit" (click)="submit()" class="btn btn-outline-secondary">
+      SKICKA IN HÄLSODEKLARATION
     </button>
-    <p class="error">{{ error }}</p>
+    <p class="error-message">{{ error }}</p>
   </div>
 </section>
