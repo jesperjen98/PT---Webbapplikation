@@ -10,7 +10,7 @@ import {
   AngularFirestoreDocument,
 } from '@angular/fire/firestore';
 import firebase from 'firebase';
-import { switchMap, tap } from 'rxjs/operators';
+import { switchMap } from 'rxjs/operators';
 
 import { Router } from '@angular/router';
 import { User } from '../models/user';
@@ -36,7 +36,6 @@ export class AuthService {
         return of(null);
       })
     );
-    // this.user$.toPromise().then((data) => console.log(data));
   }
 
   /**
@@ -69,18 +68,6 @@ export class AuthService {
             });
 
           return statusCode;
-
-          // this._router.navigate([]);
-          // const idToken: string | null = await userCredential.user
-          //   .getIdToken()
-          //   .then((token: string) => {
-          //     return token;
-          //   })
-          //   .catch(() => {
-          //     return null;
-          //   });
-          // idToken && sessionStorage.setItem('idToken', idToken);
-          // console.log(sessionStorage.getItem('idToken'));
         }
         return StatusCodes.Error;
       })
@@ -94,8 +81,6 @@ export class AuthService {
         }
         return StatusCodes.Error;
       });
-    // this.user$.toPromise().then((data) => console.log(data));
-
     return result;
   }
 
@@ -153,7 +138,7 @@ export class AuthService {
   /**
    * Signs the user out and redirects the user to the home page.
    */
-  public signOut() {
+  public signOut(): void {
     this._angularFireAuth.signOut().then(() => this._router.navigate(['/']));
   }
 }

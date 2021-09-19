@@ -1,3 +1,4 @@
+import { SettingsPageComponent } from './pages/member-page/pages/settings-page/settings-page.component';
 import { MemberHomePageComponent } from './pages/member-page/pages/member-home-page/member-home-page.component';
 import { HealthDeclarationPageComponent } from './pages/member-page/pages/health-declaration-page/health-declaration-page.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
@@ -41,6 +42,10 @@ const routes: Routes = [
       {
         path: 'healthDeclaration',
         component: HealthDeclarationPageComponent,
+      },
+      {
+        path: 'settings',
+        component: SettingsPageComponent,
       },
     ],
   },
