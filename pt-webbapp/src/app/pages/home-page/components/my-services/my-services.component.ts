@@ -9,9 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class MyServicesComponent implements OnInit {
   services: Array<Services> = [
     {
-      image:
-        'https://check.se/wp-content/uploads/2020/11/sa-gor-du-en-instagram-guide-check-kommunikationsbyra--800x419.png',
-      title: 'Tränings program',
+      image: 'assets/images/training-program.jpg',
+      title: 'TRÄNINGSPROGRAM',
       info: `
         <ul>
           <li>Skräddarsytt träningsprogram utformat specifikt för dig och dina behov.</li>
@@ -27,9 +26,8 @@ export class MyServicesComponent implements OnInit {
       price: '1500 kr/mån',
     },
     {
-      image:
-        'https://media-cdn.tripadvisor.com/media/photo-s/17/f5/39/f7/fooood-at-the-food-department.jpg',
-      title: 'Tränings program med kostrådgivning',
+      image: 'assets/images/training-and-diet.jpg',
+      title: 'TRÄNINGSPROGRAM OCH KOSTRÅDGIVNING',
       info: `
         <ul>
           <li>Personligt utformad kostplan utan fasta recept eller dieter.</li>
@@ -48,8 +46,8 @@ export class MyServicesComponent implements OnInit {
       price: '1650 kr/mån',
     },
     {
-      image: 'https://miro.medium.com/max/1400/1*LzSzKxNOKNCFTy7gEPBNtA.png',
-      title: 'Träningsapplikation',
+      image: 'assets/images/applikation.png',
+      title: 'TRÄNINGSAPPLIKATION',
       info: `Praesent tincidunt consectetur dignissim. Proin risus quam, lobortis id dui a, vestibulum cursus ante. Vivamus ipsum nulla, pharetra vitae euismod at, tempus a eros. Pellentesque urna lorem, placerat eget ligula quis, bibendum pulvinar nulla. Duis auctor libero vitae ipsum auctor consectetur. In hac habitasse platea dictumst. Etiam ligula orci, pretium et felis ac, ornare interdum magna. Praesent sit amet erat gravida tortor convallis blandit eu in leo. Nam eget semper enim, eu efficitur risus.`,
       price: null,
     },

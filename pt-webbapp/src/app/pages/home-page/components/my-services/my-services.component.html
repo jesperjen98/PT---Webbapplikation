@@ -1,6 +1,6 @@
 <section class="my-services-section">
   <div class="container-fluid text-center">
-    <h1>Mina tjänster</h1>
+    <h1>MINA TJÄNSTER</h1>
   </div>
 
   <div class="container-fluid">
@@ -9,7 +9,10 @@
         <a href="services">
           <div class="card my-5 mx-sm-4">
             <div class="card-title">
-              <img src="{{ service.image }}" />
+              <div
+                class="service-image"
+                [ngStyle]="{ 'background-image': 'url(' + service.image + ')' }"
+              ></div>
               <div class="title">
                 <h3>{{ service.title }}</h3>
               </div>

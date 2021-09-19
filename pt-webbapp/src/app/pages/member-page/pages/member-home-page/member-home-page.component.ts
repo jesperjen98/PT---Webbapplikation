@@ -14,7 +14,7 @@ export class MemberHomePageComponent implements OnInit {
         'https://powerslides.com/wp-content/uploads/2021/01/Training-Plan-Template-1.png',
       description:
         'Här kan du se över dina personliga mål och kommande händelser (träning, uppföljning, invägning)',
-      title: 'Kalender',
+      title: 'KALENDER',
     },
     {
       redirectTo: 'user/healthDeclaration',
@@ -22,7 +22,7 @@ export class MemberHomePageComponent implements OnInit {
         'https://www.1177.se/globalassets/1177/nationell/media/illustrationer/ovrig-grafik/symboler-diagram-kartor/ikoner-sektionsstartsidor/img-liv-halsa.svg',
       description:
         'Fyll i hälsodeklartionen så jag kan få en bättre överblick.',
-      title: 'Hälsodeklaration',
+      title: 'HÄLSODEKLARATION',
     },
     {
       redirectTo: '#',
@@ -30,28 +30,28 @@ export class MemberHomePageComponent implements OnInit {
         'https://dailyburn.com/life/wp-content/uploads/2021/03/push-ups-cover.png',
       description:
         'Här kan du få hjälp med att utföra övningar på ett bra och säkert sätt.',
-      title: 'Övningsbank',
+      title: 'ÖVNINGSBANK',
     },
     {
       redirectTo: '#',
       imageSrc:
         'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg',
       description: 'Här kan du fylla i dina matvanor. Alla kalorier räknas!',
-      title: 'Matdagbok',
+      title: 'MATDAGBOK',
     },
     {
       redirectTo: '#',
       imageSrc:
         'https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/09/Barbell-Training-Program-for-the-Beginner.jpg',
       description: 'Här kan du hitta träningsprogram skräddarsydda för dig.',
-      title: 'Program',
+      title: 'PROGRAM',
     },
     {
       redirectTo: '#',
       imageSrc:
         'https://www.emoji.co.uk/files/mozilla-emojis/objects-mozilla/11933-chart-with-upwards-trend.png',
       description: 'Här kan du se över hur mycket bättre du blivit.',
-      title: 'Min progression',
+      title: 'MIN PROGRESSION',
     },
   ];
   constructor() {}
