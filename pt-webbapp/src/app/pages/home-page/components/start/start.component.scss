@@ -12,4 +12,18 @@
 h1 {
   color: map-get($map: $theme-colors, $key: title-color-light);
   text-shadow: 2px 2px map-get($map: $theme-colors, $key: dark);
+  font-size: 1.5rem;
+}
+
+// For larger screens
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 546px) {
+  .btn {
+    font-size: 12px;
+  }
 }

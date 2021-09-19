@@ -6,6 +6,12 @@ img {
   height: 200px;
 }
 
+h3 {
+  color: map-get($map: $theme-colors, $key: title-color-light);
+  text-shadow: 2px 2px map-get($map: $theme-colors, $key: dark);
+  font-size: 18px;
+}
+
 a {
   text-decoration: none;
   .card {
@@ -47,7 +53,8 @@ a {
       transition: 0.5s;
       height: 80px;
       width: 100%;
-      background-color: rgba(44, 42, 42, 0.4);
+      background-color: map-get($map: $theme-colors, $key: dark);
+      opacity: 0.9;
       position: absolute;
       bottom: 0px;
     }
@@ -65,7 +72,8 @@ a {
       transition: 0.5s;
       height: 110px;
       width: 100%;
-      background-color: rgba(44, 42, 42, 0.4);
+      background-color: map-get($map: $theme-colors, $key: dark);
+      opacity: 0.5;
       position: absolute;
       bottom: 0px;
     }

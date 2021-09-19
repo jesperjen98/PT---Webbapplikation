@@ -2,14 +2,27 @@
 
 h1 {
   color: map-get($map: $theme-colors, $key: title-color-light);
+  font-size: 1.5rem;
 }
-img {
-  max-width: 100%;
-  height: 100%;
+
+// For larger screens
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
+.service-image {
+  width: inherit;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 h3 {
   color: map-get($map: $theme-colors, $key: title-color-light);
   text-shadow: 2px 2px map-get($map: $theme-colors, $key: dark);
+  font-size: 18px;
 }
 
 a {
@@ -52,7 +65,8 @@ a {
       transition: 0.5s;
       height: 80px;
       width: 100%;
-      background-color: rgba(44, 42, 42, 0.4);
+      background-color: map-get($map: $theme-colors, $key: dark);
+      opacity: 0.9;
       position: absolute;
       bottom: 0px;
     }
@@ -70,7 +84,8 @@ a {
       transition: 0.5s;
       height: 110px;
       width: 100%;
-      background-color: rgba(44, 42, 42, 0.4);
+      background-color: map-get($map: $theme-colors, $key: dark);
+      opacity: 0.5;
       position: absolute;
       bottom: 0px;
     }
