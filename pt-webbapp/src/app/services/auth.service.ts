@@ -1,3 +1,4 @@
+import { User } from './../models/user';
 import { Observable, of } from 'rxjs';
 
 import { StatusCodes } from './../models/status-codes';
@@ -10,10 +11,9 @@ import {
   AngularFirestoreDocument,
 } from '@angular/fire/firestore';
 import firebase from 'firebase';
-import { switchMap, tap } from 'rxjs/operators';
+import { switchMap } from 'rxjs/operators';
 
 import { Router } from '@angular/router';
-import { User } from '../models/user';
 
 @Injectable({
   providedIn: 'root',
@@ -31,12 +31,11 @@ export class AuthService {
         if (user) {
           return this._angularFirestore
             .doc<User>(`users/${user.uid}`)
-            .valueChanges();
+            .valueChanges({ idField: 'uid' });
         }
         return of(null);
       })
     );
-    // this.user$.toPromise().then((data) => console.log(data));
   }
 
   /**
@@ -69,18 +68,6 @@ export class AuthService {
             });
 
           return statusCode;
-
-          // this._router.navigate([]);
-          // const idToken: string | null = await userCredential.user
-          //   .getIdToken()
-          //   .then((token: string) => {
-          //     return token;
-          //   })
-          //   .catch(() => {
-          //     return null;
-          //   });
-          // idToken && sessionStorage.setItem('idToken', idToken);
-          // console.log(sessionStorage.getItem('idToken'));
         }
         return StatusCodes.Error;
       })
@@ -94,8 +81,6 @@ export class AuthService {
         }
         return StatusCodes.Error;
       });
-    // this.user$.toPromise().then((data) => console.log(data));
-
     return result;
   }
 
@@ -134,6 +119,7 @@ export class AuthService {
             lastName: lastName,
             birthdate: birthdate,
             gender: gender,
+            email: email,
           });
           return StatusCodes.Success;
         }
@@ -153,7 +139,38 @@ export class AuthService {
   /**
    * Signs the user out and redirects the user to the home page.
    */
-  public signOut() {
+  public signOut(): void {
     this._angularFireAuth.signOut().then(() => this._router.navigate(['/']));
+  }
+
+  /**
+   * Reauthenticates the users credentials based on email and password.
+   * @param email The user's email adress.
+   * @param password The user's password.
+   * @returns Promise StatusCodes used to deduce what happend
+   */
+  public async reauthenticate(
+    email: string,
+    password: string
+  ): Promise<StatusCodes> {
+    const user: firebase.User | null = await this._angularFireAuth.currentUser;
+    if (user) {
+      const credentials = firebase.auth.EmailAuthProvider.credential(
+        email,
+        password
+      );
+      const statusCode: StatusCodes = await user
+        .reauthenticateWithCredential(credentials)
+        .then((_) => {
+          return StatusCodes.Success;
+        })
+        .catch((error) => {
+          console.log(error);
+
+          return StatusCodes.Error;
+        });
+      return statusCode;
+    }
+    return StatusCodes.Error;
   }
 }
