@@ -1,4 +1,156 @@
-<p>settings-page works!</p>
-<button (click)="updateEmail()" class="btn btn-outline-secondary">
-  Uppdatera mailhelvetet
-</button>
+<section class="user-info-section my-4" *ngIf="isLoaded">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-6">
+        <div class="row justify-content-center align-items-center text-center">
+          <h5>PERSONLIG INFORMATION</h5>
+        </div>
+
+        <p>
+          Namn: <i class="user-info">{{ firstName }} {{ lastName }}</i>
+        </p>
+        <p>
+          Emailaddress: <i>{{ email }}</i>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="divider py-3 p">
+  <div class="container">
+    <div class="border border-secondary"></div>
+  </div>
+</section>
+
+<section class="settings-section my-4">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col">
+        <h5>UPPDATERA INFORMATION</h5>
+        <form [formGroup]="newEmailForm">
+          <div class="form-group">
+            <label>Eventuell ny emailadress</label>
+            <input
+              type="email"
+              formControlName="email"
+              class="form-control"
+              placeholder="Ange eventuell ny email"
+            />
+            <p class="error-message">{{ emailError }}</p>
+          </div>
+        </form>
+
+        <form [formGroup]="newPasswordForm">
+          <div class="form-group">
+            <label>Eventuellt nytt lösenord</label>
+            <input
+              type="password"
+              formControlName="password"
+              class="form-control"
+              placeholder="Ange Eventuellt nytt lösenord"
+            />
+            <p class="error-message">{{ passwordError }}</p>
+          </div>
+        </form>
+        <div class="row justify-content-end align-items-center mx-2">
+          <button
+            [disabled]="!newEmailForm.valid && !newPasswordForm.valid"
+            class="btn btn-outline-secondary"
+            (click)="open(confirmPassword)"
+          >
+            KONFIRMERA
+          </button>
+        </div>
+
+        <section class="divider py-3 p">
+          <div class="container">
+            <div class="border border-secondary"></div>
+          </div>
+        </section>
+
+        <div class="row justify-content-end align-items-center mx-2">
+          <button
+            class="btn btn-outline-danger"
+            title="Radera kontot och all information kopplad till dig."
+            (click)="open(confirmDeletion)"
+          >
+            RADERA KONTO
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ng-template #confirmPassword let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">ANGE LÖSENORD</h4>
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    >
+      <i class="bi bi-x-square exit-icon"></i>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="passwordForm">
+      <div class="form-group">
+        <label class="label-dark">Ange lösenord för att godkänna</label>
+        <input
+          formControlName="password"
+          type="password"
+          class="form-control"
+          placeholder="Lösenord"
+        />
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="submit"
+      class="btn btn-outline-secondary"
+      (click)="modal.close('Save click')"
+    >
+      OK
+    </button>
+  </div>
+</ng-template>
+
+<ng-template #confirmDeletion let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">RADERA KONTO</h4>
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="modal.dismiss()"
+    >
+      <i class="bi bi-x-square exit-icon"></i>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="passwordForm">
+      <div class="form-group">
+        <label class="label-dark">Ange lösenord för att godkänna</label>
+        <input
+          formControlName="password"
+          type="password"
+          class="form-control"
+          placeholder="Lösenord"
+        />
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="submit"
+      class="btn btn-outline-danger"
+      (click)="deleteAccount()"
+    >
+      RADERA KONTO
+    </button>
+  </div>
+</ng-template>

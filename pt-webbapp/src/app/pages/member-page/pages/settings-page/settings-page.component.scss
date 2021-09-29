@@ -1,0 +1,26 @@
+@import "../../../../design/colors.scss";
+
+.exit-icon {
+  font-size: 24px;
+  color: map-get($map: $theme-colors, $key: secondary);
+}
+
+h4 {
+  color: map-get($map: $theme-colors, $key: title-color-dark);
+}
+
+h5 {
+  color: map-get($map: $theme-colors, $key: title-color-light);
+}
+
+.user-info {
+  color: map-get($map: $theme-colors, $key: text-color-light);
+}
+
+label {
+  color: map-get($map: $theme-colors, $key: text-color-light);
+}
+
+.label-dark {
+  color: map-get($map: $theme-colors, $key: text-color-dark);
+}
