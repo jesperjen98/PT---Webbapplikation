@@ -9,12 +9,19 @@ import { CardNavigation } from 'src/app/models/cardNavigation';
 export class MemberHomePageComponent implements OnInit {
   navigationCards: Array<CardNavigation> = [
     {
+      redirectTo: 'user/programs',
+      imageSrc:
+        'https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/09/Barbell-Training-Program-for-the-Beginner.jpg',
+      description: 'Här kan du hitta träningsprogram skräddarsydda för dig.',
+      title: 'PROGRAM',
+    },
+    {
       redirectTo: '#',
       imageSrc:
-        'https://powerslides.com/wp-content/uploads/2021/01/Training-Plan-Template-1.png',
+        'https://dailyburn.com/life/wp-content/uploads/2021/03/push-ups-cover.png',
       description:
-        'Här kan du se över dina personliga mål och kommande händelser (träning, uppföljning, invägning)',
-      title: 'KALENDER',
+        'Här kan du få hjälp med att utföra övningar på ett bra och säkert sätt.',
+      title: 'ÖVNINGSBANK',
     },
     {
       redirectTo: 'user/healthDeclaration',
@@ -27,10 +34,10 @@ export class MemberHomePageComponent implements OnInit {
     {
       redirectTo: '#',
       imageSrc:
-        'https://dailyburn.com/life/wp-content/uploads/2021/03/push-ups-cover.png',
+        'https://powerslides.com/wp-content/uploads/2021/01/Training-Plan-Template-1.png',
       description:
-        'Här kan du få hjälp med att utföra övningar på ett bra och säkert sätt.',
-      title: 'ÖVNINGSBANK',
+        'Här kan du se över dina personliga mål och kommande händelser (träning, uppföljning, invägning)',
+      title: 'KALENDER',
     },
     {
       redirectTo: '#',
@@ -39,13 +46,7 @@ export class MemberHomePageComponent implements OnInit {
       description: 'Här kan du fylla i dina matvanor. Alla kalorier räknas!',
       title: 'MATDAGBOK',
     },
-    {
-      redirectTo: '#',
-      imageSrc:
-        'https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/09/Barbell-Training-Program-for-the-Beginner.jpg',
-      description: 'Här kan du hitta träningsprogram skräddarsydda för dig.',
-      title: 'PROGRAM',
-    },
+
     {
       redirectTo: '#',
       imageSrc:

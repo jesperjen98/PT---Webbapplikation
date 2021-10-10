@@ -24,6 +24,8 @@ import { ServicesPageComponent } from './pages/services-page/services-page.compo
 import { HealthDeclarationPageComponent } from './pages/member-page/pages/health-declaration-page/health-declaration-page.component';
 import { MemberHomePageComponent } from './pages/member-page/pages/member-home-page/member-home-page.component';
 import { SettingsPageComponent } from './pages/member-page/pages/settings-page/settings-page.component';
+import { ProgramsPageComponent } from './pages/member-page/pages/programs-page/programs-page.component';
+import { ProgramPageComponent } from './pages/member-page/pages/program-page/program-page.component';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -47,6 +49,8 @@ firebase.initializeApp(firebaseConfig);
     HealthDeclarationPageComponent,
     MemberHomePageComponent,
     SettingsPageComponent,
+    ProgramsPageComponent,
+    ProgramPageComponent,
   ],
 
   imports: [

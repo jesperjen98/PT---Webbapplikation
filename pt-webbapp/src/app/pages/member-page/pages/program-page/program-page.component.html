@@ -1,0 +1,30 @@
+<section class="program-info-section">
+  <div *ngIf="program" class="container">
+    <h1>{{ program.title }}</h1>
+    <img src="{{ program.image }}" />
+  </div>
+</section>
+
+<section class="program-section d-none d-md-block" *ngIf="program">
+  <div class="container">
+    <div
+      class="program-page"
+      *ngFor="let page of program.content"
+      [ngStyle]="{ 'background-image': 'url(' + page + ')' }"
+    >
+      <img src="{{ page }}" style="visibility: hidden" />
+    </div>
+  </div>
+</section>
+
+<section class="mobile-program-section d-md-none" *ngIf="program">
+  <div class="container">
+    <div
+      class="mobile-program-page"
+      *ngFor="let page of program.mobileContent"
+      [ngStyle]="{ 'background-image': 'url(' + page + ')' }"
+    >
+      <img src="{{ page }}" style="visibility: hidden" />
+    </div>
+  </div>
+</section>
