@@ -1,0 +1,40 @@
+<section class="navigation-section">
+  <div *ngIf="isLoaded" class="container">
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let program of programs">
+        <a [routerLink]="['/user/programs', program.uid]">
+          <div class="card my-4 mx-sm-3">
+            <div class="card-title">
+              <div
+                class="service-image"
+                [ngStyle]="{ 'background-image': 'url(' + program.image + ')' }"
+              ></div>
+              <div class="title">
+                <h3>{{ program.title }}</h3>
+              </div>
+            </div>
+            <div class="card-body">
+              {{ program.description }}
+            </div>
+            <div
+              class="
+                card-footer
+                text-right
+                py-3
+                border-0
+                row
+                align-items-center
+              "
+            >
+              <div class="col">
+                <a [routerLink]="['/user/programs', program.uid]"
+                  ><i class="bi bi-arrow-right-circle"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

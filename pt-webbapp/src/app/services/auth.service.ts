@@ -120,6 +120,7 @@ export class AuthService {
             birthdate: birthdate,
             gender: gender,
             email: email,
+            programs: [],
           });
           return StatusCodes.Success;
         }

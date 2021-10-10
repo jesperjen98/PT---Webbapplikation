@@ -1,3 +1,5 @@
+import { ProgramPageComponent } from './pages/member-page/pages/program-page/program-page.component';
+import { ProgramsPageComponent } from './pages/member-page/pages/programs-page/programs-page.component';
 import { SettingsPageComponent } from './pages/member-page/pages/settings-page/settings-page.component';
 import { MemberHomePageComponent } from './pages/member-page/pages/member-home-page/member-home-page.component';
 import { HealthDeclarationPageComponent } from './pages/member-page/pages/health-declaration-page/health-declaration-page.component';
@@ -46,6 +48,14 @@ const routes: Routes = [
       {
         path: 'settings',
         component: SettingsPageComponent,
+      },
+      {
+        path: 'programs',
+        component: ProgramsPageComponent,
+      },
+      {
+        path: 'programs/:programId',
+        component: ProgramPageComponent,
       },
     ],
   },
