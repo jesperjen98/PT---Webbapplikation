@@ -26,6 +26,8 @@ import { MemberHomePageComponent } from './pages/member-page/pages/member-home-p
 import { SettingsPageComponent } from './pages/member-page/pages/settings-page/settings-page.component';
 import { ProgramsPageComponent } from './pages/member-page/pages/programs-page/programs-page.component';
 import { ProgramPageComponent } from './pages/member-page/pages/program-page/program-page.component';
+import { DietPlansComponent } from './pages/member-page/pages/diet-plans/diet-plans.component';
+import { DietPlanComponent } from './pages/member-page/pages/diet-plan/diet-plan.component';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -51,6 +53,8 @@ firebase.initializeApp(firebaseConfig);
     SettingsPageComponent,
     ProgramsPageComponent,
     ProgramPageComponent,
+    DietPlansComponent,
+    DietPlanComponent,
   ],
 
   imports: [

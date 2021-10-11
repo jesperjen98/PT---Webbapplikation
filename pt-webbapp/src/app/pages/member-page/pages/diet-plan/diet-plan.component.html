@@ -1,0 +1,30 @@
+<section class="diet-plan-info-section">
+  <div *ngIf="dietPlan" class="container">
+    <h1>{{ dietPlan.title }}</h1>
+    <img src="{{ dietPlan.image }}" />
+  </div>
+</section>
+
+<section class="diet-plan-section d-none d-md-block" *ngIf="dietPlan">
+  <div class="container">
+    <div
+      class="diet-plan-page"
+      *ngFor="let page of dietPlan.content"
+      [ngStyle]="{ 'background-image': 'url(' + page + ')' }"
+    >
+      <img src="{{ page }}" style="visibility: hidden" />
+    </div>
+  </div>
+</section>
+
+<section class="mobile-diet-plan-section d-md-none" *ngIf="dietPlan">
+  <div class="container">
+    <div
+      class="mobile-diet-plan-page"
+      *ngFor="let page of dietPlan.mobileContent"
+      [ngStyle]="{ 'background-image': 'url(' + page + ')' }"
+    >
+      <img src="{{ page }}" style="visibility: hidden" />
+    </div>
+  </div>
+</section>

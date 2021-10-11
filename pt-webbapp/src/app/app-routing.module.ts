@@ -1,3 +1,4 @@
+import { DietPlansComponent } from './pages/member-page/pages/diet-plans/diet-plans.component';
 import { ProgramPageComponent } from './pages/member-page/pages/program-page/program-page.component';
 import { ProgramsPageComponent } from './pages/member-page/pages/programs-page/programs-page.component';
 import { SettingsPageComponent } from './pages/member-page/pages/settings-page/settings-page.component';
@@ -14,6 +15,7 @@ import { MemberPageComponent } from './pages/member-page/member-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DietPlanComponent } from './pages/member-page/pages/diet-plan/diet-plan.component';
 
 const routes: Routes = [
   {
@@ -56,6 +58,14 @@ const routes: Routes = [
       {
         path: 'programs/:programId',
         component: ProgramPageComponent,
+      },
+      {
+        path: 'dietPlans',
+        component: DietPlansComponent,
+      },
+      {
+        path: 'dietPlans/:dietProgramId',
+        component: DietPlanComponent,
       },
     ],
   },
