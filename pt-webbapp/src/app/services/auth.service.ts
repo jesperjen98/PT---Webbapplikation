@@ -121,6 +121,7 @@ export class AuthService {
             gender: gender,
             email: email,
             programs: [],
+            dietPlans: [],
           });
           return StatusCodes.Success;
         }

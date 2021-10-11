@@ -8,4 +8,5 @@ export interface User {
   lastName: string;
   role: Roles;
   programs: Array<string>;
+  dietPlans: Array<string>;
 }

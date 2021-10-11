@@ -14,7 +14,7 @@ export class ProgramService {
 
   /**
    * Fetches all programs.
-   * @param programs An array of program uids-
+   * @param programs An array of program uids
    * @returns An array of programs
    */
   public async getPrograms(programs: Array<string>): Promise<Array<Program>> {
@@ -50,7 +50,6 @@ export class ProgramService {
   public async getProgram(program_uid: string): Promise<Program | null> {
     const programDocRef: AngularFirestoreDocument<Program> =
       this._angularFirestore.collection('programs').doc(program_uid);
-    this._angularFirestore.collection('programs').doc(program_uid);
     const program = await programDocRef
       .get()
       .toPromise()

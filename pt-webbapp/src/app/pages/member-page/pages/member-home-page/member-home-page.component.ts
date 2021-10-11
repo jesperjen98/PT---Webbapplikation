@@ -16,6 +16,13 @@ export class MemberHomePageComponent implements OnInit {
       title: 'PROGRAM',
     },
     {
+      redirectTo: 'user/dietPlans',
+      imageSrc:
+        'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg',
+      description: 'Här kan du hitta kostplaner skräddarsydda för dig.',
+      title: 'KOSTPLANER',
+    },
+    {
       redirectTo: '#',
       imageSrc:
         'https://dailyburn.com/life/wp-content/uploads/2021/03/push-ups-cover.png',
@@ -39,14 +46,6 @@ export class MemberHomePageComponent implements OnInit {
         'Här kan du se över dina personliga mål och kommande händelser (träning, uppföljning, invägning)',
       title: 'KALENDER',
     },
-    {
-      redirectTo: '#',
-      imageSrc:
-        'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg',
-      description: 'Här kan du fylla i dina matvanor. Alla kalorier räknas!',
-      title: 'MATDAGBOK',
-    },
-
     {
       redirectTo: '#',
       imageSrc:
