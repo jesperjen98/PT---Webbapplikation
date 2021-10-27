@@ -20,22 +20,16 @@
             <div class="card-body">
               <div [innerHTML]="service.info"></div>
             </div>
-            <div
-              class="
-                card-footer
-                text-right
-                py-3
-                border-0
-                row
-                align-items-center
-              "
-            >
-              <div class="col text-left">
-                <h6 *ngIf="service.price">{{ service.price }}</h6>
+            <div class="card-footer">
+              <div class="d-flex justify-content-between">
+                <h6 style="display: inline" *ngIf="service.price">
+                  {{ service.price }}
+                </h6>
+                <a class="text-right" href="services"
+                  >Läs mer <i class="bi bi-arrow-right"></i
+                ></a>
               </div>
-              <div class="col">
-                <a href="services">Läs mer <i class="bi bi-arrow-right"></i></a>
-              </div>
+              <div></div>
             </div>
           </div>
         </a>
