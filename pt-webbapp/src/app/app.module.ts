@@ -28,6 +28,8 @@ import { ProgramsPageComponent } from './pages/member-page/pages/programs-page/p
 import { ProgramPageComponent } from './pages/member-page/pages/program-page/program-page.component';
 import { DietPlansComponent } from './pages/member-page/pages/diet-plans/diet-plans.component';
 import { DietPlanComponent } from './pages/member-page/pages/diet-plan/diet-plan.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ExercisesPageComponent } from './shared/pages/exercises-page/exercises-page.component';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -55,6 +57,7 @@ firebase.initializeApp(firebaseConfig);
     ProgramPageComponent,
     DietPlansComponent,
     DietPlanComponent,
+    ExercisesPageComponent,
   ],
 
   imports: [
@@ -63,6 +66,7 @@ firebase.initializeApp(firebaseConfig);
     AngularFireModule.initializeApp(firebaseConfig),
     NgbModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

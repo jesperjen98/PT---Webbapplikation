@@ -1,3 +1,4 @@
+import { ExercisesPageComponent } from './shared/pages/exercises-page/exercises-page.component';
 import { DietPlansComponent } from './pages/member-page/pages/diet-plans/diet-plans.component';
 import { ProgramPageComponent } from './pages/member-page/pages/program-page/program-page.component';
 import { ProgramsPageComponent } from './pages/member-page/pages/programs-page/programs-page.component';
@@ -66,6 +67,10 @@ const routes: Routes = [
       {
         path: 'dietPlans/:dietProgramId',
         component: DietPlanComponent,
+      },
+      {
+        path: 'exercises',
+        component: ExercisesPageComponent,
       },
     ],
   },

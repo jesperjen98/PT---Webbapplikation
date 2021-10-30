@@ -23,7 +23,7 @@ export class MemberHomePageComponent implements OnInit {
       title: 'KOSTPLANER',
     },
     {
-      redirectTo: '#',
+      redirectTo: 'user/exercises',
       imageSrc:
         'https://dailyburn.com/life/wp-content/uploads/2021/03/push-ups-cover.png',
       description:
