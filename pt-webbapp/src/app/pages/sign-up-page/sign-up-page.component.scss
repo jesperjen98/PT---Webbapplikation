@@ -11,7 +11,8 @@
 }
 
 .form-panel {
-  margin: 10px;
+  margin: 20px;
   margin-left: 150px;
   margin-right: 150px;
+  color: map-get($map: $theme-colors, $key: text-color-light);
 }

@@ -32,6 +32,7 @@
       <!-- Please observe that "Kön" is a default value -->
       <div class="form-group">
         <label>Kön</label>
+        <div></div>
         <select value="default" formControlName="gender">
           <option value="default" disable hidden>Kön</option>
           <option *ngFor="let gender of getAllGenders()">
