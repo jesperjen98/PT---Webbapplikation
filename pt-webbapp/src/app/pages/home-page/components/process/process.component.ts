@@ -10,18 +10,21 @@ export class ProcessComponent implements OnInit {
   infoCards: Array<InfoCard> = [
     {
       number: 1,
-      title: 'Title here',
-      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In accumsan, metus sit amet tincidunt pulvinar, libero ipsum lobortis nisi, eget eleifend lectus tellus ut libero. Donec et efficitur neque, rhoncus aliquam dolor.',
+      title: 'Gratis Konsultation',
+      info: `Här har vi en stund att lära känna varandra. Vill gärna höra om din nuvarande livssituation & bakgrund samt varför du tagit kontakt med mig. 
+            Vi kommer prata om introveckan & hur den spelar in i ditt personliga program.`,
     },
     {
       number: 2,
-      title: 'Title here',
-      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In accumsan, metus sit amet tincidunt pulvinar, libero ipsum lobortis nisi, eget eleifend lectus tellus ut libero. Donec et efficitur neque, rhoncus aliquam dolor.',
+      title: 'Introvecka',
+      info: `Du ska genomgå bedömning övningar för att jag ska se din fysiska kapacitet & rörlighet. Frågeformulär angående hälsa & kost (om det valts till).
+            Övningar filmas och skickas till mig så jag kan förbereda ett personligt program för dig. `,
     },
     {
       number: 3,
-      title: 'Title here',
-      info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In accumsan, metus sit amet tincidunt pulvinar, libero ipsum lobortis nisi, eget eleifend lectus tellus ut libero. Donec et efficitur neque, rhoncus aliquam dolor.',
+      title: 'Personligt program start',
+      info: `Du kör på i 3 veckor på ditt personliga program. Innan månadens avslut har vi en uppföljning där vi pratar om din utveckling,framsteg & motgångar.
+             Hur vi ska gå vidare och så ska du bestämma om du vill fortsätta kommande månad.`,
     },
   ];
   constructor() {}
