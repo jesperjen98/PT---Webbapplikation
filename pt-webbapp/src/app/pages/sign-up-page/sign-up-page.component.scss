@@ -9,31 +9,9 @@
     font-size: 14px;
   }
 }
-.panel {
-  padding: 25px 25px 25px 25px;
-  h2 {
-    color: map-get($map: $theme-colors, $key: title-color-light);
-  }
-  label {
-    color: map-get($map: $theme-colors, $key: text-color-light);
-  }
-  //   .form-control {
-  //     border-color: map-get($map: $theme-colors, $key: primary);
-  //   }
-  //   .form-control:focus {
-  //     border-color: map-get($map: $theme-colors, $key: primary);
-  //     box-shadow: inset 0 1px 1px map-get($map: $theme-colors, $key: primary),
-  //       0 0 8px map-get($map: $theme-colors, $key: secondary);
-  //   }
-  .panel-body {
-    color: map-get($map: $theme-colors, $key: text-color-light);
-  }
-  .panel-heading {
-    color: map-get($map: $theme-colors, $key: sub-title-color);
-    font-size: xx-large;
-  }
-  .panel-footer {
-    color: map-get($map: $theme-colors, $key: sub-title-color);
-    font-size: large;
-  }
+
+.form-panel {
+  margin: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
