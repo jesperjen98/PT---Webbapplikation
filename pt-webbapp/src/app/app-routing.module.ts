@@ -1,7 +1,8 @@
+import { AdminHomePageComponent } from './pages/admin-page/pages/admin-home-page/admin-home-page.component';
 import { DietPlansComponent } from './pages/member-page/pages/diet-plans/diet-plans.component';
 import { ProgramPageComponent } from './pages/member-page/pages/program-page/program-page.component';
 import { ProgramsPageComponent } from './pages/member-page/pages/programs-page/programs-page.component';
-import { SettingsPageComponent } from './pages/member-page/pages/settings-page/settings-page.component';
+import { SettingsPageComponent } from './shared/pages/settings-page/settings-page.component';
 import { MemberHomePageComponent } from './pages/member-page/pages/member-home-page/member-home-page.component';
 import { HealthDeclarationPageComponent } from './pages/member-page/pages/health-declaration-page/health-declaration-page.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
@@ -73,6 +74,16 @@ const routes: Routes = [
     path: Roles.Admin,
     component: AdminPageComponent,
     canActivate: [AdminGuard],
+    children: [
+      {
+        path: '',
+        component: AdminHomePageComponent,
+      },
+      {
+        path: 'settings',
+        component: SettingsPageComponent,
+      },
+    ],
   },
 ];
 

@@ -1,4 +1,4 @@
-@import "../../design/colors.scss";
+@import "../../../design/colors.scss";
 .account-icon {
   font-size: 24px;
   color: map-get($map: $theme-colors, $key: secondary);
