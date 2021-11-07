@@ -62,7 +62,9 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <a class="dropdown-item" href="{{ role }}">Mina sidor</a>
-                <a class="dropdown-item" href="user/settings">Inställningar</a>
+                <a class="dropdown-item" href="{{ role }}/settings"
+                  >Inställningar</a
+                >
                 <a class="dropdown-item" (click)="signOut()" href=""
                   >Logga ut</a
                 >

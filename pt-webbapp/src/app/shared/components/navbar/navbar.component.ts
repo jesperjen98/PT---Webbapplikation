@@ -1,6 +1,6 @@
 import { take } from 'rxjs/operators';
-import { Roles } from './../../models/roles';
-import { AuthService } from './../../services/auth.service';
+import { Roles } from '../../../models/roles';
+import { AuthService } from '../../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
