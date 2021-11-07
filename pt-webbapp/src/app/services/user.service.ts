@@ -5,6 +5,7 @@ import {
   AngularFirestoreDocument,
 } from '@angular/fire/firestore';
 import firebase from 'firebase';
+import { User } from '../models/user';
 
 @Injectable({
   providedIn: 'root',
@@ -108,5 +109,36 @@ export class UserService {
       return statusCode;
     }
     return StatusCodes.Error;
+  }
+
+  /**
+   *  Fetches all users in the system.
+   *  TODO: Implement pagination
+   * @returns Array of all users.
+   */
+  public async getAllUsers(): Promise<Array<User>> {
+    const users: Array<User> = [];
+    await this._angularFirestore
+      .collection('users')
+      .get()
+      .toPromise()
+      .then((usersSnapshot: firebase.firestore.QuerySnapshot<unknown>) => {
+        usersSnapshot.docs.forEach((userDocument: any) => {
+          const userData = userDocument.data();
+          const user: User = {
+            uid: userDocument.id,
+            email: userData.email,
+            birthdate: userData.birthdate,
+            firstName: userData.firstName,
+            lastName: userData.lastName,
+            role: userData.role,
+            programs: userData.programs,
+            dietPlans: userData.dietPlans,
+          };
+          users.push(user);
+        });
+      });
+
+    return users;
   }
 }
