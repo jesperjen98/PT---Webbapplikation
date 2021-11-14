@@ -12,8 +12,8 @@
   font-family: "Josefin Sans", sans-serif;
 }
 body {
-  height: 100%;
   background: map-get($map: $theme-colors, $key: background-color) !important;
+  color: map-get($map: $theme-colors, $key: secondary) !important;
 
   p {
     color: map-get($map: $theme-colors, $key: text-color-light);
@@ -23,7 +23,7 @@ body {
   }
   a:hover {
     color: map-get($map: $theme-colors, $key: secondary);
-  }
+  }  
 }
 
 .navbar {
@@ -34,6 +34,10 @@ body {
 
 .card {
   width: 18rem;
+}
+
+footer{
+  margin-top: auto
 }
 
 @import "~bootstrap/scss/bootstrap";

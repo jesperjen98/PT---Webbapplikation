@@ -1,64 +1,43 @@
-<div class="container-fluid vh-100">
-  <div class="vh-100 row align-middle justify-content-evenly">
-    <div class="col d-none d-lg-block bg-complementary">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis
-        nisl id mi porta, quis iaculis tellus finibus. Morbi sagittis mi nec
-        dignissim fringilla. Sed eu tempus nunc. Suspendisse at porttitor leo,
-        eget cursus odio. Nulla blandit sapien quis arcu finibus, aliquet
-        ullamcorper dui auctor. Suspendisse tristique turpis et libero lobortis
-        tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-        nibh nunc, ullamcorper posuere tempus ac, porta et leo. In eu neque quis
-        nibh luctus ornare a at sapien. Vestibulum et nunc turpis. Aliquam erat
-        volutpat. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Nam malesuada commodo nulla nec mollis.
-        Praesent elementum quam non est efficitur lobortis. Class aptent taciti
-        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      </p>
-    </div>
-    <div class="vh-100 col-md-5 align-self-center">
-      <div class="vh-100 row align-items-center justify-content-center">
-        <div class="col align-self-center">
-          <div class="panel">
-            <div class="panel-body">
-              <h2>LOGGA IN</h2>
-              <form [formGroup]="loginForm" (ngSubmit)="login()">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Emailadress</label>
-                  <input
-                    formControlName="email"
-                    type="email"
-                    class="form-control"
-                    aria-describedby="emailHelp"
-                    placeholder="email@exempel.se"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Lösenord</label>
-                  <input
-                    formControlName="password"
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Lösenord"
-                  />
-                </div>
-                <div class="row justify-content-between">
-                  <div class="col">
-                    <button type="submit" class="btn btn-outline-secondary">
-                      LOGGA IN
-                    </button>
-                  </div>
 
-                  <div class="col text-right">
-                    <p>Inget konto? <a href="/signUp">Ansök här</a></p>
-                  </div>
-                </div>
-                <p class="error-message">{{ error }}</p>
-              </form>
+<div class="d-flex flex-column">
+  <div class="col-md-5 align-self-center">
+    <div class="panel">
+      <div class="panel-body">
+        <h2>LOGGA IN</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Emailadress</label>
+            <input
+              formControlName="email"
+              type="email"
+              class="form-control"
+              aria-describedby="emailHelp"
+              placeholder="email@exempel.se"
+                />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Lösenord</label>
+            <input
+              formControlName="password"
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Lösenord"
+            />
+          </div>
+          <div class="row justify-content-between">
+            <div class="col">
+              <button type="submit" class="btn btn-outline-secondary">
+                LOGGA IN
+              </button>
+            </div>
+
+            <div class="col text-right">
+              <p>Inget konto? <a href="/signUp">Ansök här</a></p>
             </div>
           </div>
-        </div>
+          <p class="error-message">{{ error }}</p>
+        </form>
       </div>
     </div>
   </div>
