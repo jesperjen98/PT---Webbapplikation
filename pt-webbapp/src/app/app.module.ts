@@ -7,9 +7,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MemberPageComponent } from './pages/member-page/member-page.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { PageFooterComponent } from './shared/page-footer/page-footer.component';
+import { PageFooterComponent } from './shared/components/page-footer/page-footer.component';
 import { AngularFireModule } from '@angular/fire';
 import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
 import firebase from 'firebase';
@@ -23,11 +23,12 @@ import { FaqComponent } from './pages/home-page/components/faq/faq.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
 import { HealthDeclarationPageComponent } from './pages/member-page/pages/health-declaration-page/health-declaration-page.component';
 import { MemberHomePageComponent } from './pages/member-page/pages/member-home-page/member-home-page.component';
-import { SettingsPageComponent } from './pages/member-page/pages/settings-page/settings-page.component';
+import { SettingsPageComponent } from './shared/pages/settings-page/settings-page.component';
 import { ProgramsPageComponent } from './pages/member-page/pages/programs-page/programs-page.component';
 import { ProgramPageComponent } from './pages/member-page/pages/program-page/program-page.component';
 import { DietPlansComponent } from './pages/member-page/pages/diet-plans/diet-plans.component';
 import { DietPlanComponent } from './pages/member-page/pages/diet-plan/diet-plan.component';
+import { AdminHomePageComponent } from './pages/admin-page/pages/admin-home-page/admin-home-page.component';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -55,6 +56,7 @@ firebase.initializeApp(firebaseConfig);
     ProgramPageComponent,
     DietPlansComponent,
     DietPlanComponent,
+    AdminHomePageComponent,
   ],
 
   imports: [
