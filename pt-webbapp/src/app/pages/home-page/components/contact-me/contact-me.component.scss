@@ -6,27 +6,19 @@
 
 .card {
   width: auto;
-  .signature {
-    color: map-get($map: $theme-colors, $key: text-color-dark);
-    font-weight: bold;
-    font-size: large;
-  }
-  a {
-    font-size: small;
-    font-weight: normal;
-  }
 }
+
 .card-body {
   color: map-get($map: $theme-colors, $key: text-color-dark);
 }
-.card-footer {
-  color: map-get($map: $theme-colors, $key: text-color-dark);
-  font-weight: bold;
-  font-size: large;
-}
+
 .card-title {
   padding-top: 25px;
   padding-left: 25px;
   color: map-get($map: $theme-colors, $key: title-color-dark);
   font-size: xx-large;
+}
+
+.form-group {
+  color: map-get($map: $theme-colors, $key: title-color-dark);
 }
