@@ -1,7 +1,7 @@
-import { AuthService } from './../../../../services/auth.service';
-import { DietService } from './../../../../services/diet.service';
+import { AuthService } from '../../../../core/services/auth.service';
+import { DietService } from '../../../../core/services/diet.service';
 import { Component, OnInit } from '@angular/core';
-import { DietPlan } from 'src/app/models/dietPlan';
+import { DietPlan } from 'src/app/shared/models/dietPlan';
 import { take } from 'rxjs/operators';
 
 @Component({

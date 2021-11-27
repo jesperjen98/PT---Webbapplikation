@@ -1,5 +1,5 @@
-import { Program } from './../../../../models/program';
-import { ProgramService } from './../../../../services/program.service';
+import { Program } from '../../../../shared/models/program';
+import { ProgramService } from '../../../../core/services/program.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 

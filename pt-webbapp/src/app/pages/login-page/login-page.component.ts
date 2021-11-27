@@ -1,5 +1,5 @@
-import { StatusCodes } from './../../models/status-codes';
-import { AuthService } from './../../services/auth.service';
+import { StatusCodes } from '../../shared/models/status-codes';
+import { AuthService } from '../../core/services/auth.service';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { InfoCard } from '../../../../models/infoCard';
+import { InfoCard } from '../../../../shared/models/infoCard';
 
 @Component({
   selector: 'app-process',

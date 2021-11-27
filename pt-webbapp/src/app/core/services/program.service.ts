@@ -1,4 +1,4 @@
-import { Program } from './../models/program';
+import { Program } from '../../shared/models/program';
 import { Injectable } from '@angular/core';
 import {
   AngularFirestore,

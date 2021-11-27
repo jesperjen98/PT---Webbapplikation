@@ -8,7 +8,7 @@ import {
 } from '@angular/router';
 import { Observable } from 'rxjs';
 import { take, map, tap } from 'rxjs/operators';
-import { Roles } from '../models/roles';
+import { Roles } from '../../shared/models/roles';
 import { AuthService } from '../services/auth.service';
 
 /**

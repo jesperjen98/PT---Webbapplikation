@@ -1,7 +1,7 @@
-import { StatusCodes } from '../../../models/status-codes';
-import { AuthService } from '../../../services/auth.service';
+import { StatusCodes } from '../../models/status-codes';
+import { AuthService } from '../../../core/services/auth.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { UserService } from '../../../services/user.service';
+import { UserService } from '../../../core/services/user.service';
 import { Component, OnInit } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { take } from 'rxjs/operators';

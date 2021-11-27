@@ -1,4 +1,4 @@
-import { Services } from './../../../../models/services';
+import { Services } from '../../../../shared/models/services';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

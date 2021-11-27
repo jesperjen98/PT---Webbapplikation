@@ -1,11 +1,11 @@
-import { StatusCodes } from './../models/status-codes';
+import { StatusCodes } from '../../shared/models/status-codes';
 import { Injectable } from '@angular/core';
 import {
   AngularFirestore,
   AngularFirestoreDocument,
 } from '@angular/fire/firestore';
 import firebase from 'firebase';
-import { User } from '../models/user';
+import { User } from '../../shared/models/user';
 
 @Injectable({
   providedIn: 'root',
