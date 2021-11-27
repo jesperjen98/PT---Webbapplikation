@@ -1,3 +1,4 @@
+import { ManageProgramsPageComponent } from './pages/admin-page/pages/manage-programs-page/manage-programs-page.component';
 import { ManageUsersPageComponent } from './pages/admin-page/pages/manage-users-page/manage-users-page.component';
 import { AdminHomePageComponent } from './pages/admin-page/pages/admin-home-page/admin-home-page.component';
 import { DietPlansComponent } from './pages/member-page/pages/diet-plans/diet-plans.component';
@@ -7,10 +8,10 @@ import { SettingsPageComponent } from './shared/pages/settings-page/settings-pag
 import { MemberHomePageComponent } from './pages/member-page/pages/member-home-page/member-home-page.component';
 import { HealthDeclarationPageComponent } from './pages/member-page/pages/health-declaration-page/health-declaration-page.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
-import { AdminGuard } from './guards/admin.guard';
+import { AdminGuard } from './core/guards/admin.guard';
 import { AdminPageComponent } from './pages/admin-page/admin-page.component';
-import { Roles } from './models/roles';
-import { UserGuard } from './guards/user.guard';
+import { Roles } from './shared/models/roles';
+import { UserGuard } from './core/guards/user.guard';
 import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { MemberPageComponent } from './pages/member-page/member-page.component';
@@ -87,6 +88,10 @@ const routes: Routes = [
       {
         path: 'manageUsers',
         component: ManageUsersPageComponent,
+      },
+      {
+        path: 'programs',
+        component: ManageProgramsPageComponent,
       },
     ],
   },

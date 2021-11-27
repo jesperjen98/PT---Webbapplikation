@@ -1,9 +1,9 @@
-import { StatusCodes } from './../../models/status-codes';
+import { StatusCodes } from '../../shared/models/status-codes';
 import { Router } from '@angular/router';
-import { AuthService } from './../../services/auth.service';
+import { AuthService } from '../../core/services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Genders } from 'src/app/models/genders';
+import { Genders } from 'src/app/shared/models/genders';
 
 @Component({
   selector: 'app-sign-up-page',

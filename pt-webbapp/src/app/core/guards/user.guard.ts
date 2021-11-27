@@ -1,4 +1,4 @@
-import { AuthService } from './../services/auth.service';
+import { AuthService } from '../services/auth.service';
 import { Injectable } from '@angular/core';
 import {
   ActivatedRouteSnapshot,
@@ -9,7 +9,7 @@ import {
 } from '@angular/router';
 import { Observable } from 'rxjs';
 import { tap, take, map } from 'rxjs/operators';
-import { Roles } from '../models/roles';
+import { Roles } from '../../shared/models/roles';
 
 /**
  * UserGuard will check if the user is of role user.

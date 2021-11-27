@@ -1,4 +1,4 @@
-import { DietPlan } from './../models/dietPlan';
+import { DietPlan } from '../../shared/models/dietPlan';
 import { Injectable } from '@angular/core';
 import {
   AngularFirestore,

@@ -1,6 +1,6 @@
-import { UserService } from './../../../../services/user.service';
+import { UserService } from '../../../../core/services/user.service';
 import { Component, OnInit } from '@angular/core';
-import { User } from 'src/app/models/user';
+import { User } from 'src/app/shared/models/user';
 
 @Component({
   selector: 'app-manage-users-page',

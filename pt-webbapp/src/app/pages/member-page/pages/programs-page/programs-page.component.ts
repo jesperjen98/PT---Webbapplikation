@@ -1,6 +1,6 @@
-import { AuthService } from './../../../../services/auth.service';
-import { ProgramService } from './../../../../services/program.service';
-import { Program } from '../../../../models/program';
+import { AuthService } from '../../../../core/services/auth.service';
+import { ProgramService } from '../../../../core/services/program.service';
+import { Program } from '../../../../shared/models/program';
 import { Component, OnInit } from '@angular/core';
 import { take } from 'rxjs/operators';
 

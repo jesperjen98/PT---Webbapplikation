@@ -1,6 +1,6 @@
-import { DietService } from './../../../../services/diet.service';
+import { DietService } from '../../../../core/services/diet.service';
 import { ActivatedRoute } from '@angular/router';
-import { DietPlan } from './../../../../models/dietPlan';
+import { DietPlan } from '../../../../shared/models/dietPlan';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CardNavigation } from 'src/app/models/cardNavigation';
+import { CardNavigation } from 'src/app/shared/models/cardNavigation';
 
 @Component({
   selector: 'app-member-home-page',

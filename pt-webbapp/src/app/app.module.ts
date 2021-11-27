@@ -30,6 +30,8 @@ import { DietPlansComponent } from './pages/member-page/pages/diet-plans/diet-pl
 import { DietPlanComponent } from './pages/member-page/pages/diet-plan/diet-plan.component';
 import { AdminHomePageComponent } from './pages/admin-page/pages/admin-home-page/admin-home-page.component';
 import { ManageUsersPageComponent } from './pages/admin-page/pages/manage-users-page/manage-users-page.component';
+import { ManageProgramsPageComponent } from './pages/admin-page/pages/manage-programs-page/manage-programs-page.component';
+import { DropZoneDirective } from './shared/directives/drop-zone.directive';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -59,6 +61,8 @@ firebase.initializeApp(firebaseConfig);
     DietPlanComponent,
     AdminHomePageComponent,
     ManageUsersPageComponent,
+    ManageProgramsPageComponent,
+    DropZoneDirective,
   ],
 
   imports: [

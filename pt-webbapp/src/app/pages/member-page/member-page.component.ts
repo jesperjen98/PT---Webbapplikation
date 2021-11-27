@@ -1,5 +1,5 @@
-import { CardNavigation } from './../../models/cardNavigation';
-import { AuthService } from './../../services/auth.service';
+import { CardNavigation } from '../../shared/models/cardNavigation';
+import { AuthService } from '../../core/services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import firebase from 'firebase';
 
