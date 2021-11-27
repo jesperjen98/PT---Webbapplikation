@@ -13,6 +13,5 @@ export class ManageUsersPageComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     this.users = await this._userService.getAllUsers();
-    console.log(this.users);
   }
 }
