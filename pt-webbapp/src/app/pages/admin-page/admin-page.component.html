@@ -1,3 +1,26 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
-<app-page-footer></app-page-footer>
+<nav id="mySidebar" class="sidebar">
+  <a class="closebtn" (click)="toggleSideBar()">
+    <i class="bi bi-x text-secondary"></i>
+  </a>
+  <ul>
+    <li>
+      <a class="btn-outline-secondary" href="/admin">Start</a>
+    </li>
+    <li>
+      <a class="btn-outline-secondary" href="#">Program</a>
+    </li>
+    <li>
+      <a class="btn-outline-secondary" href="#">Kostplaner</a>
+    </li>
+    <li>
+      <a class="btn-outline-secondary" href="admin/manageUsers">Kunder</a>
+    </li>
+  </ul>
+</nav>
+
+<div id="main">
+  <button class="openbtn my-1" (click)="toggleSideBar()">
+    <i class="bi bi-list"></i>
+  </button>
+  <router-outlet></router-outlet>
+</div>

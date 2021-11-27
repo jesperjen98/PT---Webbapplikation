@@ -1,3 +1,4 @@
+import { ManageUsersPageComponent } from './pages/admin-page/pages/manage-users-page/manage-users-page.component';
 import { AdminHomePageComponent } from './pages/admin-page/pages/admin-home-page/admin-home-page.component';
 import { DietPlansComponent } from './pages/member-page/pages/diet-plans/diet-plans.component';
 import { ProgramPageComponent } from './pages/member-page/pages/program-page/program-page.component';
@@ -82,6 +83,10 @@ const routes: Routes = [
       {
         path: 'settings',
         component: SettingsPageComponent,
+      },
+      {
+        path: 'manageUsers',
+        component: ManageUsersPageComponent,
       },
     ],
   },

@@ -1,0 +1,12 @@
+@import "../../../../design/colors.scss";
+a {
+  color: map-get($map: $theme-colors, $key: text-color-dark);
+  font-size: large;
+}
+
+li {
+  font-size: large;
+  h1 {
+    color: map-get($map: $theme-colors, $key: text-color-dark);
+  }
+}
