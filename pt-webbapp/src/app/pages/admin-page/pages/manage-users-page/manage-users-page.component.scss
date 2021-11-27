@@ -6,4 +6,7 @@ a {
 
 li {
   font-size: large;
+  h1 {
+    color: map-get($map: $theme-colors, $key: text-color-dark);
+  }
 }
